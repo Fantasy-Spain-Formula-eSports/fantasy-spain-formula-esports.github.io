@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantasy Spain Formula eSports</title>
+    <script src="./scripts/clasification.js" defer></script>
+</head>
+
+<body onload="get_data()">
+    <style>
+        body{
+			margin: 0;
+			padding: 0;
+            min-width: 1000px;
+            /* min-height: 130rem; */
+            overflow:scroll;
+            overflow-x:auto;
+            overflow-y: auto;
+            scroll-behavior: smooth;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: black;
+        }
+    </style>
+    <style>
+        nav{
+            display: flex;
+            position: fixed;
+			top: 0;
+			left: 0;
+            height: 3rem;
+            width: 100%;
+            background-color: rgb(0, 0, 0);
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+        }
+        .logo{
+            font-size: 2rem;
+            color: #f3eeee;
+        }
+        .logo img{
+            filter:drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
+            margin-top: 0.5rem;
+            height:2rem;
+            animation: drop-shadow-logo 5s ease-in-out 0s infinite normal forwards;
+        }
+        @keyframes drop-shadow-logo {
+            0%   {filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.6))}
+            50%  {filter: drop-shadow(0 0 8px rgb(255, 0, 0))}
+            100% {filter: drop-shadow(0 0 4px rgba(255,255,255, 0.6))}
+        }
+        .nav-links {
+            list-style-type: none;
+            display: flex;
+        }
+
+
+        .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            height: 2rem;
+            margin: 0;
+        }
+
+        .nav-links button{
+            font-size: large;
+            width: max-content;
+            min-width: 7rem;
+            height: 2.5rem;
+            background-color: transparent;
+            color: #f3eeee;
+            font-weight: bold;
+            border: 0px solid white;
+            border-left: 1px solid white;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .nav-links button:hover {
+            animation-name: neon-effect;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+            animation-delay: 0s;
+            cursor: pointer;
+            animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+            animation-play-state: running;
+        }
+        @keyframes neon-effect {
+            from{text-shadow:
+                0 0 7px #fff,
+                0 0 10px #fff,
+                0 0 21px #fff,
+                0 0 42px #fff,
+                0 0 82px #fff,
+                0 0 92px #fff,
+                0 0 102px #fff,
+                0 0 151px #fff;}
+            to{text-shadow:
+                0 0 7px #fff,
+                0 0 10px #fff,
+                0 0 21px #fff,
+                0 0 42px rgb(255, 0, 0),
+                0 0 82px rgb(255, 0, 0),
+                0 0 92px rgb(255, 0, 0),
+                0 0 102px rgb(255, 0, 0),
+                0 0 151px rgb(255, 0, 0);}
+        }
+    </style>
+    <nav>
+        <div class="logo"><img src="./attachments/f_logo_icon.png" alt="" srcset=""></div>
+        <ul class="nav-links">
+            <li><a href="prueba.html"><button>Inicio</button></a></li>
+          <li><a href="teams.html"><button>Escuderías</button></a></li>
+          <li><a href="tracks.html"><button>Circuitos</button></a></li>
+          <li><a href="calendar.html"><button>Calendario</button></a></li>
+          <li><a href="clasification.html"><button>Clasificación</button></a></li>
+          <li><a href="contact.html"><button style="margin-right: 1rem;border-right: 1px solid white;">Contacto</button></a></li>
+        </ul>
+    </nav>
+    <style>
+        header{
+            position:relative;
+            top:3rem;
+            left:0rem;
+            height: 17rem;
+            color:white;
+            text-align: center;
+            font-size: 5rem;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 900;
+        }
+        header div{
+            height: 2rem;
+        }
+        header div button{
+            background-color: transparent;
+            min-height: 5rem;
+            width: 22rem;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 3rem;
+            color: #f3eeee;
+            border-radius: 2rem;
+            border: 2px solid red ;
+            box-shadow: 0px 5px 10px 0px rgba(255, 0, 0, 0.7);     
+            font-weight: 800;
+        }
+        header div button:hover{
+            cursor: pointer;
+            animation: neon;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+            animation-timing-function: ease-in-out;
+            background-color: white;
+            color: black;
+            box-shadow: 0px 10px 20px 0px rgba(255, 0, 0, 0.7);     
+        }
+        @keyframes neon{
+            from{background-color: transparent;color: #f3eeee;}
+            to{background-color: white;color:black;box-shadow: 0px 5px 20px 0px rgba(255, 0, 0, 0.7); }
+        }
+    </style>
+    <header>Clasificación<div style="font-size:large;margin-top: 1rem;">Selecciona la categoría para ver:</div><div><button onclick="show_formula_uno()">Formula Uno</button><button onclick="show_formula_dos()" style="margin-left: 1rem;">Formula Dos</button></div></header>
+    <style>
+        main{
+            height: max-content;
+            min-height: 20rem;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            text-align: center;
+            position:relative;
+            top:3rem;
+            z-index: -2;
+            border-top: 2px solid white;
+            padding-top: 1rem;
+            padding-bottom: rem;
+        }
+        table{
+            margin-bottom: 5rem;
+        }
+        thead{
+            border: 1px solid white;
+        }
+        th{
+            width: 7rem;
+            font-size: 1rem;
+        }
+        tr{
+            height: 3rem;
+            border: 1px solid white;
+        }
+
+    </style>
+    <br>
+    <main id="main">
+        <div id="formula-uno" style="display: none;">
+            <table style="margin: auto;border:1px solid white;margin-bottom: 1rem;">
+                <thead>
+                  <tr>
+                    <th style="background-color: red;">Piloto</th>
+                    <th>España</th>
+                    <th>Barein</th>
+                    <th>Brasil</th>
+                    <th>Imola</th>
+                    <th>Azerbaijan</th>
+                    <th>Qatar</th>
+                    <th>Spa-Francorchamps</th>
+                    <th>Canadá</th>
+                    <th>Las Vegas</th>
+                    <th>Japón</th>
+                    <th style="background-color: red;">Puntos</th>
+                  </tr>
+                </thead>
+                <tbody id="f1-drivers-table">
+                  <!-- Repeat the following row 20 times -->
+                  <tr>
+                    <td id="driver_1" style="background-color: red;">Driver</td>
+                    <td id="driver_1_race_01">Data 2</td>
+                    <td id="driver_1_race_02">Data 3</td>
+                    <td id="driver_1_race_03">Data 4</td>
+                    <td id="driver_1_race_04">Data 5</td>
+                    <td id="driver_1_race_05">Dataa 6</td>
+                    <td id="driver_1_race_06">Data 7</td>
+                    <td id="driver_1_race_07">Data 8</td>
+                    <td id="driver_1_race_08">Data 9</td>
+                    <td id="driver_1_race_09">Data 10</td>
+                    <td id="driver_1_race_10">Data 11</td>
+                    <td id="driver_1_total_point" style="background-color: red;">Data 12</td>
+                  </tr>
+                </tbody>
+            </table>
+            <table style="margin: auto;border:1px solid white;">
+                <thead>
+                  <tr>
+                    <th style="background-color: white;color: black;">Equipo</th>
+                    <th>España</th>
+                    <th>Barein</th>
+                    <th>Brasil</th>
+                    <th>Imola</th>
+                    <th>Azerbaijan</th>
+                    <th>Qatar</th>
+                    <th>Spa-Francorchamps</th>
+                    <th>Canadá</th>
+                    <th>Las Vegas</th>
+                    <th>Japón</th>
+                    <th style="background-color: red;">Puntos</th>
+                  </tr>
+                </thead>
+                <tbody id="f1-teams-table">
+                  <!-- Repeat the following row 20 times -->
+                  <tr>
+                    <td id="driver_1" style="background-color: white;color: black;">Driver</td>
+                    <td id="driver_1_race_01">Data 2</td>
+                    <td id="driver_1_race_02">Data 3</td>
+                    <td id="driver_1_race_03">Data 4</td>
+                    <td id="driver_1_race_04">Data 5</td>
+                    <td id="driver_1_race_05">Data 6</td>
+                    <td id="driver_1_race_06">Data 7</td>
+                    <td id="driver_1_race_07">Data 8</td>
+                    <td id="driver_1_race_08">Data 9</td>
+                    <td id="driver_1_race_09">Data 10</td>
+                    <td id="driver_1_race_10">Data 11</td>
+                    <td id="driver_1_total_point" style="background-color: red;">Data 12</td>
+                  </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="formula-dos" style="display: none;">
+            <table id="formula-dos-drivers-table" style="margin: auto;border:1px solid white;">
+                <thead>
+                  <tr>
+                    <th style="background-color: red;">Piloto</th>
+                    <th>España</th>
+                    <th>Barein</th>
+                    <th>Brasil</th>
+                    <th>Imola</th>
+                    <th>Azerbaijan</th>
+                    <th>Qatar</th>
+                    <th>Spa-Francorchamps</th>
+                    <th>Canadá</th>
+                    <th>Las Vegas</th>
+                    <th>Japón</th>
+                    <th style="background-color: red;">Puntos</th>
+                  </tr>
+                </thead>
+                <tbody id="f2-drivers-table">
+                  <!-- Repeat the following row 20 times -->
+                  <tr>
+                    <td style="background-color: red;">Nombre</td>
+                    <td>Data 2</td>
+                    <td>Data 3</td>
+                    <td>Data 4</td>
+                    <td>Data 5</td>
+                    <td>Data 6</td>
+                    <td>Data 7</td>
+                    <td>Data 8</td>
+                    <td>Data 9</td>
+                    <td>Data 10</td>
+                    <td>Data 11</td>
+                    <td style="background-color: red;">Data 12</td>
+                  </tr>
+                </tbody>
+            </table>
+            <table id="formula-dos-teams-table" style="margin: auto;border:1px solid white;">
+                <thead>
+                  <tr>
+                    <th style="background-color: white;color: black;">Equipo</th>
+                    <th>España</th>
+                    <th>Barein</th>
+                    <th>Brasil</th>
+                    <th>Imola</th>
+                    <th>Azerbaijan</th>
+                    <th>Qatar</th>
+                    <th>Spa-Francorchamps</th>
+                    <th>Canadá</th>
+                    <th>Las Vegas</th>
+                    <th>Japón</th>
+                    <th style="background-color: red;">Puntos</th>
+                  </tr>
+                </thead>
+                <tbody id="f2-teams-table">
+                  <!-- Repeat the following row 20 times -->
+                  <tr>
+                    <td id="driver_1" style="background-color: white;color: black;">Driver</td>
+                    <td id="driver_1_race_01">Data 2</td>
+                    <td id="driver_1_race_02">Data 3</td>
+                    <td id="driver_1_race_03">Data 4</td>
+                    <td id="driver_1_race_04">Data 5</td>
+                    <td id="driver_1_race_05">Data 6</td>
+                    <td id="driver_1_race_06">Data 7</td>
+                    <td id="driver_1_race_07">Data 8</td>
+                    <td id="driver_1_race_08">Data 9</td>
+                    <td id="driver_1_race_09">Data 10</td>
+                    <td id="driver_1_race_10">Data 11</td>
+                    <td id="driver_1_total_point" style="background-color: red;">Data 12</td>
+                  </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <style>
+        footer{
+            position: fixed;
+			bottom: 0rem;
+            left: 0;
+            padding: 0;
+            margin: 0 auto;
+            background-color: black;
+            min-height: 1rem;
+            max-height: 1.6rem;
+            min-width: 100%;
+            align-items: center;
+            display: flex;
+            justify-content: left;
+            min-width: 100%;
+            width: 100%;
+        }
+        footer .footer-text{
+            margin-left: 1rem ;
+            margin-right: 1rem;
+            color: #f3eeee;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: smaller;
+        }
+    </style>
+    <footer><div class="footer-text">Fantasy Spain Formula eSports© - Copyright 2024 - Creado por SalcedoManuel</div></footer>
+</body>
+</html>
