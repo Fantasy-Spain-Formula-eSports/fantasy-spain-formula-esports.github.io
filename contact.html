@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fantasy Spain Formula eSports</title>
+    <link rel="icon" type="image/x-icon" href="./attachments/icon.png">
 </head>
 
 <body>
@@ -107,7 +108,7 @@
         }
     </style>
     <nav>
-        <div class="logo"><img src="./f_logo_icon_248908.png" alt="" srcset=""></div>
+        <div class="logo"><img src="./attachments/f_logo_icon.png" alt="" srcset=""></div>
         <ul class="nav-links">
             <li><a href="index.html"><button>Inicio</button></a></li>
           <li><a href="teams.html"><button>Escuderías</button></a></li>
@@ -123,129 +124,180 @@
             top:3rem;
             left: 0rem;
             z-index: -1;
-            height: 30rem;
-            width: 100%;
-            margin: 0 auto;
-            color:#f3eeee;
-            background-image: url('./Azerbaijan-city.png');
-            background-color: black;
-            background-size:contain;
-            background-repeat: no-repeat;
-            background-position: bottom;
-            background-position: right;
-            
-        }
-        #show_bg_2 {
-            /* background-image:linear-gradient(to left, rgba(245, 246, 252, 0.52), rgb(117, 19, 93)); */
-            background: rgb(255,255,255);
-            background: linear-gradient(330deg, rgba(255,255,255,0) 20%, rgba(179,175,175,0.4374124649859944) 25%, rgba(0,0,0,0.6811099439775911) 40%, rgba(0,0,0,0.9248074229691877) 50%, rgba(0,0,0,1) 100%);
-            height: 30rem;
-            background-size: cover;
-            color: white;
-            padding: 20px;
+            min-height:7rem ;      
         }
     </style>
     <header>
-        <div id="show_bg_2">
-            <h1 style="font-weight: 900;font-size: 4.5rem;">Gran Premio de Azerbaijan</h1>
-            <h2>Circuito Urbano de Bakú - 1 de Mayo 2024</h2>
-            <img src="./azerbaijan.png" alt="country" width="150rem" style="margin-left: 10rem;">
-            <h4 style="margin-left: 7rem;">Fantasy Spain Formula eSports©</h4>
-        </div>
-    </header>
-    <style>
-        main{
-            height: max-content;
-            min-height: 20rem;
-            background-color: rgb(0, 0, 0);
-            color: white;
-            text-align: center;
-            position:relative;
-            z-index: -1;
-            border-top: 2px solid white;
-        }
-        main p{
-            text-align: left;
-            margin-left: 5rem;
-            margin-right: 5rem;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            font-weight: 500;
-            font-size: large;
-        }
-        main b{
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            font-weight: 900;
-            font-size: larger;
-        }
-        main h4{
-            text-align: left;
-            margin-left: 5rem;
-            margin-right: 5rem;
-        }
-        #tracks {
-            display: flex;
-            flex-wrap: wrap;
-            flex-flow:wrap;
-            flex-shrink: initial;
-            margin: 0 auto;
-            margin-left: 10rem;
-            margin-right: 6rem;
-        }
 
-        #tracks button {
-            width: 20rem;
-            height: 15rem;
-            margin: 1.5rem;
-            border-radius: 2rem;
-            align-self:center;
-            font-size: xx-large;
-            font-family:Verdana, Geneva, Tahoma, sans-serif;
-            font-weight: bolder;
-        }
+    </header>
+
+    <style>
+        .form-container {
+  width: 30rem;
+  background: linear-gradient(#212121, #212121) padding-box,
+              linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
+  border: 2px solid transparent;
+  padding: 32px 24px;
+  font-size: 14px;
+  font-family: inherit;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+  border-radius: 16px;
+  background-size: 200% 100%;
+  animation: gradient 5s ease infinite;
+  margin: auto;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.form-container button:active {
+  scale: 0.95;
+}
+
+.form-container .form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-container .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.form-container .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.form-container .form-group input {
+  width: 25rem;
+  padding: 12px 16px;
+  border-radius: 8px;
+  color: #fff;
+  font-family: inherit;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+}
+
+.form-container .form-group textarea {
+  width: 25rem;
+  padding: 12px 16px;
+  border-radius: 8px;
+  resize: none;
+  color: #fff;
+  height: 96px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  font-family: inherit;
+}
+
+.form-container .form-group input::placeholder {
+  opacity: 0.5;
+}
+
+.form-container .form-group input:focus {
+  outline: none;
+  border-color: #e81cff;
+}
+
+.form-container .form-group textarea:focus {
+  outline: none;
+  border-color: #e81cff;
+}
+
+.form-container .form-submit-btn {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: flex-start;
+  font-family: inherit;
+  color: #ffffff;
+  font-weight: 600;
+  width: 40%;
+  background: #313131;
+  border: 1px solid #414141;
+  padding: 12px 16px;
+  font-size: inherit;
+  gap: 8px;
+  margin-top: 8px;
+  cursor: pointer;
+  border-radius: 6px;
+  margin: auto;
+}
+
+.form-container .form-submit-btn:hover {
+  background-color: #fff;
+  border-color: #fff;
+  color:#414141 ;
+}
+
     </style>
-    <script>
-        window.onload = function() {
-            if (/iPad|iPhone|iPod|Android/.test(navigator.userAgent)) {
-                console.log("This is an iOS/Android device.");
-            } else {
-                console.log("This is not an iOS/Android device!");
-            }
-            var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-            if (isMobile) {
-                document.getElementById("main").style.display = "block";
-                // document.getElementById('header').classList.remove('hidden');
-            }else{
-                document.getElementById("main").style.display = "block";
-            }
-        };
-    </script>
-    <br>
-    <main id="main">
-        <b></b>
-        <span style="font-size: xx-large;font-weight: bold;width: 100%;">¿Cómo funciona este campeonato?</span>
-        <hr>
-        <p>• El campeonato Fantasy Spain Formula Sports se divide en dos partes. El Draft y las Carreras.</p>
-        <p>
-            •  En el <b>DRAFT</b> todos los jugadores de la temporada deberán correr en sesiones de clasificación corta en 3 circuitos elegidos por la organización.
-             Estos 3 circuitos en la primera temporada fueron el trazado de Red Bull Ring(Austria), Silverstone (Gran Bretaña) y por último, Spa-Francorchamps (Bélgica). 
-             Estos tiempos marcarán el valor de los pilotos, a mejores tiempos, mayor valor.
-        </p>
-        <p>Es aquí donde entra la labor del <b>Jefe de Equipo</b> ellos serán los encargados de elegir de entre todos cuales serán sus pilotos. El problema está en que TODOS dispondrán del mismo dinero para gastar por lo que no podrán invertir todo el dinero en los 4 mejores de cada categoría.</p>
-        <p>• Una vez que han seleccionado los jefes de equipo a sus pilotos dará comienzo la temporada regular, en ella se correrán en los circuitos elegidos por los Jefes de equipo.</p>
-        <p>Los <b>CIRCUITOS</b> seleccionados por los <b>TEAM PRINCIPAL</b> fueron:</p>
-        <div id="tracks">
-            <button style="background-image: url(./azerbaijan.png);background-repeat: no-repeat;background-size: cover;background-position: center;color:red">ESPAÑA</button>
-            <button style="background-image: url(./azerbaijan.png);background-repeat: no-repeat;background-size: cover;background-position: center;color:red">BAREIN</button>
-            <button style="background-image: url(./azerbaijan.png);background-repeat: no-repeat;background-size: cover;background-position: center;color:red">BRASIL</button>
-            <button style="background-image: url(./azerbaijan.png);background-repeat: no-repeat;background-size: cover;background-position: center;color:red">IMOLA</button>
-            <button style="background-image: url(./azerbaijan.png);background-repeat: no-repeat;background-size: cover;background-position: center;color:red">AZERBAIJAN</button>
-            <button style="background-image: url(./azerbaijan.png);background-repeat: no-repeat;background-size: cover;background-position: center;color:red">QATAR</button>
-            <button style="background-image: url(./azerbaijan.png);background-repeat: no-repeat;background-size: cover;background-position: center;color:red;font-size: x-large;">SPA-FRANCORCHAMPS</button>
-            <button style="background-image: url(./azerbaijan.png);background-repeat: no-repeat;background-size: cover;background-position: center;color:red">CANADA</button>
-            <button style="background-image: url(./azerbaijan.png);background-repeat: no-repeat;background-size: cover;background-position: center;color:red">LAS VEGAS</button>
-            <button style="background-image: url(./azerbaijan.png);background-repeat: no-repeat;background-size: cover;background-position: center;color:red">JAPÓN</button>
+    <span>
+        <div class="form-container">
+            <form class="form" id="form">
+              <div class="form-group">
+                <label for="from_name">Introduce tu email</label>
+                <input type="text" required="" name="type" id="from_name" placeholder="email@email.es">
+              </div>
+              <div class="form-group" style="display: none;">
+                <label for="reply_to">reply_to</label>
+                <input type="text" name="reply_to" id="reply_to"
+                    placeholder="paisajessonorosTFG@gmail.com">
+              </div>
+              <div class="form-group">
+                <label for="message">Escribe abajo tu mensaje: </label>
+                <textarea required="" cols="50" rows="10" id="message" name="message" placeholder="Escribe aquí..."></textarea>
+              </div>
+              <input type="submit" class="form-submit-btn" id="button" value="Enviar"></input>
+            </form>
           </div>
-    </main>
+    </span>
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    
+    <script type="text/javascript">
+        emailjs.init('JSjVUlg_stgzDtPGm')
+    </script>
+    <script>
+        const btn = document.getElementById('button');
+        document.getElementById('form').addEventListener('submit', function(event) {
+            console.info("Dentro")
+            document.getElementById("message").value += "-Correo:"+document.getElementById("from_name").value
+            event.preventDefault();
+            btn.value = 'Enviando...';
+            const serviceID = 'service_tqqq7mv';
+            const templateID = 'template_rm7wrxo';
+
+            emailjs.sendForm(serviceID, templateID, this)
+                .then(() => {
+                    btn.value = 'Enviado!';
+                }, (err) => {
+                    btn.value = 'Error!';
+                });
+        });
+    </script>
+
     <style>
         footer{
             position: fixed;
