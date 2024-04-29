@@ -1,0 +1,137 @@
+.cardBox {
+  width: 250px;
+  height: 300px;
+  position: relative;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 10px 0px,
+    rgba(0, 0, 0, 0.5) 0px 2px 25px 0px;
+  color: black;
+}
+.card#barcelona{
+    background-image: url(../../attachments/country/spain.png);
+}
+.card#barein{
+    background-image: url(../../attachments/country/bahrain.png);
+}
+.card#brasil{
+    background-image: url(../../attachments/country/brasil.png);
+    background-position: center;
+}
+.card#imola{
+    background-image: url(../../attachments/country/italy.png);
+    background-size: contain;
+    background-position: center;
+}
+.card#baku{
+    background-image: url(../../attachments/country/azerbaijan.png);
+    background-position: center;
+}
+.card#qatar{
+    background-image: url(../../attachments/country/qatar.png);
+}
+
+.card#spa{
+    background-image: url(../../attachments/country/belgium.png);
+    background-position: center;
+    background-size: contain;
+}
+.card#canada{
+    background-image: url(../../attachments/country/canada.png);
+    background-position: center;
+}
+.card#las_vegas{
+    background-image: url(../../attachments/country/usa.png);
+    background-position: top left;
+}
+.card#japon{
+    background-image: url(../../attachments/country/japan.png);
+    background-position: center;
+}
+
+.card {
+  position: absolute;
+  width: 95%;
+  height: 95%;
+  background: #000814;
+  border-radius: 20px;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: black;
+  text-shadow: 0 0 7px #fff,
+                0 0 10px #fff,
+                0 0 21px #fff,
+                0 0 42px #fff;
+  background-size: cover;
+  overflow: hidden;
+  padding: 20px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.5) 0px 18px 36px -18px inset;
+}
+
+.card .h4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  font-weight: 800;
+  pointer-events: none;
+  opacity: 1;
+  color: black;
+}
+
+.card .content .h3 {
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.card .content p {
+  font-size: 14px;
+  line-height: 1.4em;
+}
+
+.card .content {
+  transform: translateY(100%);
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.card:hover .content {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.card:hover .h4 {
+  opacity: 0;
+}
+
+.cardBox::before {
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: 150%;
+  background: #40E0D0;
+  background: -webkit-linear-gradient(to right, #FF0080, #FF8C00, #40E0D0);
+  background: linear-gradient(to right, #FF0080, #FF8C00, #40E0D0);
+  transform-origin: center;
+  animation: glowing_401 5s linear infinite;
+}
+
+@keyframes glowing_401 {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

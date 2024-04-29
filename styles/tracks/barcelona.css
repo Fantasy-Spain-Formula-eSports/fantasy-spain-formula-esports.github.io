@@ -1,0 +1,26 @@
+.card#barcelona{
+    background-image: url("../../attachments/tracks/barcelona.png");
+}
+.cardBox#barcelona::before{
+    background: -webkit-linear-gradient(to right, red, yellow, red);
+    background: linear-gradient(to right,red,yellow,red);
+}
+.skill-per.rectas.barcelona {
+    /*progreso de las diferentes lenguajes*/
+    width: 43%;
+  }
+  
+  .skill-per.lentas.barcelona {
+    /*progreso de las diferentes lenguajes*/
+    width: 17%;
+  }
+  
+  .skill-per.medias.barcelona {
+    /*progreso de las diferentes lenguajes*/
+    width: 50%;
+  }
+  
+  .skill-per.rapidas.barcelona {
+    /*progreso de las diferentes lenguajes*/
+    width: 33%;
+  }

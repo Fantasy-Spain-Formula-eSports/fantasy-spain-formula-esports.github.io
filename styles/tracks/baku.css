@@ -1,0 +1,26 @@
+.card#baku{
+    background-image: url("../../attachments/tracks/baku.png");
+}
+.cardBox#baku::before{
+    background: -webkit-linear-gradient(to right, green, red, blue);
+    background: linear-gradient(to right,blue,red,green);
+}
+.skill-per.rectas.baku {
+    /*progreso de las diferentes lenguajes*/
+    width: 62%;
+}
+
+.skill-per.lentas.baku {
+/*progreso de las diferentes lenguajes*/
+width: 40%;
+}
+
+.skill-per.medias.baku {
+/*progreso de las diferentes lenguajes*/
+width: 40%;
+}
+
+.skill-per.rapidas.baku {
+/*progreso de las diferentes lenguajes*/
+width: 20%;
+}

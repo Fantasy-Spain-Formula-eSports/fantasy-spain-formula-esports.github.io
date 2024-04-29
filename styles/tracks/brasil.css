@@ -1,0 +1,26 @@
+.card#brasil{
+    background-image: url("../../attachments/tracks/brasil.png");
+}
+.cardBox#brasil::before{
+    background: -webkit-linear-gradient(to right, green, white, green);
+    background: linear-gradient(to right,green,yellow,green);
+}
+.skill-per.rectas.brasil {
+    /*progreso de las diferentes lenguajes*/
+    width: 35%;
+}
+
+.skill-per.lentas.brasil {
+/*progreso de las diferentes lenguajes*/
+width: 16%;
+}
+
+.skill-per.medias.brasil {
+/*progreso de las diferentes lenguajes*/
+width: 42%;
+}
+
+.skill-per.rapidas.brasil {
+/*progreso de las diferentes lenguajes*/
+width: 42%;
+}

@@ -1,0 +1,26 @@
+.card#barein{
+    background-image: url("../../attachments/tracks/barein.png");
+}
+.cardBox#barein::before{
+    background: -webkit-linear-gradient(to right, red, white, white);
+    background: linear-gradient(to right,red,white,white);
+}
+.skill-per.rectas.barein {
+    /*progreso de las diferentes lenguajes*/
+    width: 51%;
+}
+
+.skill-per.lentas.barein {
+/*progreso de las diferentes lenguajes*/
+width: 23%;
+}
+
+.skill-per.medias.barein {
+/*progreso de las diferentes lenguajes*/
+width: 61%;
+}
+
+.skill-per.rapidas.barein {
+/*progreso de las diferentes lenguajes*/
+width: 16%;
+}

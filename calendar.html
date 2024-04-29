@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fantasy Spain Formula eSports</title>
+    <link rel="stylesheet" href="./styles/calendar/calendar.css">
 </head>
 
 <body>
@@ -33,6 +34,7 @@
             align-items: center;
             padding-left: 0.5rem;
             padding-right: 0.5rem;
+            z-index: 2;
         }
         .logo{
             font-size: 2rem;
@@ -107,7 +109,7 @@
         }
     </style>
     <nav>
-        <div class="logo"><img src="./f_logo_icon_248908.png" alt="" srcset=""></div>
+        <div class="logo"><img src="./attachments/f_logo_icon.png" alt="" srcset=""></div>
         <ul class="nav-links">
             <li><a href="index.html"><button>Inicio</button></a></li>
           <li><a href="teams.html"><button>Escuderías</button></a></li>
@@ -122,122 +124,136 @@
             position:relative;
             top:3rem;
             left: 0rem;
-            z-index: -1;
-            height: 30rem;
+            z-index: -5;
+            height: 10rem;
             width: 100%;
             margin: 0 auto;
             color:#f3eeee;
-            background-image: url('./Azerbaijan-city.png');
             background-color: black;
-            background-size:contain;
-            background-repeat: no-repeat;
-            background-position: bottom;
-            background-position: right;
-            
-        }
-        #show_bg_2 {
-            /* background-image:linear-gradient(to left, rgba(245, 246, 252, 0.52), rgb(117, 19, 93)); */
-            background: rgb(255,255,255);
-            background: linear-gradient(330deg, rgba(255,255,255,0) 20%, rgba(179,175,175,0.4374124649859944) 25%, rgba(0,0,0,0.6811099439775911) 40%, rgba(0,0,0,0.9248074229691877) 50%, rgba(0,0,0,1) 100%);
-            height: 30rem;
-            background-size: cover;
-            color: white;
-            padding: 20px;
-        }
-    </style>
-    <header><div id="show_bg_2"><h1 style="font-weight: 900;font-size: 4.5rem;">Gran Premio de Azerbaijan</h1><h2>Circuito Urbano de Bakú - 1 de Mayo 2024</h2><img src="./azerbaijan.png" alt="country" width="150rem" style="margin-left: 10rem;"><h4 style="margin-left: 7rem;">Fantasy Spain Formula eSports©</h4></div></header>
-    <style>
-        main{
-            height: max-content;
-            min-height: 20rem;
-            background-color: rgb(0, 0, 0);
-            color: white;
+            font-size: 5rem;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             text-align: center;
-            position:relative;
-            z-index: -1;
-            border-top: 2px solid white;
-        }
-        main p{
-            text-align: left;
-            margin-left: 5rem;
-            margin-right: 5rem;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            font-weight: 500;
-            font-size: large;
-        }
-        main b{
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            font-weight: 900;
-            font-size: larger;
-        }
-        main h4{
-            text-align: left;
-            margin-left: 5rem;
-            margin-right: 5rem;
-        }
-        #tracks {
-            display: flex;
-            flex-wrap: wrap;
-            flex-flow:wrap;
-            flex-shrink: initial;
-            margin: 0 auto;
-            margin-left: 5rem;
-            margin-right: 5rem;
-        }
-
-        #tracks button {
-            width: 20rem;
-            height: 15rem;
-            margin: 1.5rem;
-            border-radius: 2rem;
-            align-self:center;
-            font-size: xx-large;
-            font-family:Verdana, Geneva, Tahoma, sans-serif;
-            font-weight: bolder;
+            font-weight: bold;
+            border-bottom: 1px solid white;
         }
     </style>
-    <script>
-        window.onload = function() {
-            if (/iPad|iPhone|iPod|Android/.test(navigator.userAgent)) {
-                console.log("This is an iOS/Android device.");
-            } else {
-                console.log("This is not an iOS/Android device!");
-            }
-            var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-            if (isMobile) {
-                document.getElementById("main").style.display = "block";
-                // document.getElementById('header').classList.remove('hidden');
-            }else{
-                document.getElementById("main").style.display = "block";
-            }
-        };
-    </script>
-    <br>
+    <header>Calendario</header>
+    <style>
+        #main{
+            display: flex;
+            position:absolute;
+            flex-wrap: wrap;
+            flex-direction: row;
+            color: #f3eeee;
+            margin-top: 5rem;
+            margin-left: 5rem;
+            margin-right: 5rem;
+            z-index: -2;
+            min-height: 50rem;
+        }
+    </style>
     <main id="main">
-        <b></b>
-        <span style="font-size: xx-large;font-weight: bold;width: 100%;">¿Cómo funciona este campeonato?</span>
-        <hr>
-        <p>• El campeonato Fantasy Spain Formula Sports se divide en dos partes. El Draft y las Carreras.</p>
-        <p>
-            •  En el <b>DRAFT</b> todos los jugadores de la temporada deberán correr en sesiones de clasificación corta en 3 circuitos elegidos por la organización.
-             Estos 3 circuitos en la primera temporada fueron el trazado de Red Bull Ring(Austria), Silverstone (Gran Bretaña) y por último, Spa-Francorchamps (Bélgica). 
-             Estos tiempos marcarán el valor de los pilotos, a mejores tiempos, mayor valor.
-        </p>
-        <p>Es aquí donde entra la labor del <b>Jefe de Equipo</b> ellos serán los encargados de elegir de entre todos cuales serán sus pilotos. El problema está en que TODOS dispondrán del mismo dinero para gastar por lo que no podrán invertir todo el dinero en los 4 mejores de cada categoría.</p>
-        <p>• Una vez que han seleccionado los jefes de equipo a sus pilotos dará comienzo la temporada regular, en ella se correrán en los circuitos elegidos por los Jefes de equipo.</p>
-        <p>Los <b>CIRCUITOS</b> seleccionados por los <b>TEAM PRINCIPAL</b> fueron:</p>
-        <div id="tracks">
-            <button style="background-image: url(./azerbaijan.png);background-repeat: no-repeat;background-size: cover;background-position: center;color:red">ESPAÑA</button>
-            <button style="background-image: url(./azerbaijan.png);background-repeat: no-repeat;background-size: cover;background-position: center;color:red">BAREIN</button>
-            <button style="background-image: url(./azerbaijan.png);background-repeat: no-repeat;background-size: cover;background-position: center;color:red">BRASIL</button>
-            <button style="background-image: url(./azerbaijan.png);background-repeat: no-repeat;background-size: cover;background-position: center;color:red">IMOLA</button>
-            <button style="background-image: url(./azerbaijan.png);background-repeat: no-repeat;background-size: cover;background-position: center;color:red">AZERBAIJAN</button>
-            <button style="background-image: url(./azerbaijan.png);background-repeat: no-repeat;background-size: cover;background-position: center;color:red">QATAR</button>
-            <button style="background-image: url(./azerbaijan.png);background-repeat: no-repeat;background-size: cover;background-position: center;color:red;font-size: x-large;">SPA-FRANCORCHAMPS</button>
-            <button style="background-image: url(./azerbaijan.png);background-repeat: no-repeat;background-size: cover;background-position: center;color:red">CANADA</button>
-            <button style="background-image: url(./azerbaijan.png);background-repeat: no-repeat;background-size: cover;background-position: center;color:red">LAS VEGAS</button>
-            <button style="background-image: url(./azerbaijan.png);background-repeat: no-repeat;background-size: cover;background-position: center;color:red">JAPÓN</button>
-          </div>
+        <div class="cardBox" >
+            <div class="card" id="barcelona">
+               <div class="h4">3-4 Abril</div>
+             
+              <div class="content">
+                <div class="h3">Gran Premio de España</div>
+                <p>Circuito de Barcelona-Catalunya</p>
+              </div>
+            </div>
+        </div>
+        <div class="cardBox">
+            <div class="card" id="barein">
+               <div class="h4">10-11 Abril</div>
+             
+              <div class="content">
+                <div class="h3">Gran Premio de Baréin</div>
+                <p>Circuito de Baréin</p>
+              </div>
+            </div>
+        </div>
+        <div class="cardBox">
+            <div class="card" id="brasil">
+               <div class="h4">17-18 Abril</div>
+             
+              <div class="content">
+                <div class="h3">Gran Premio de Brasil</div>
+                <p>Circuito de Interlagos</p>
+              </div>
+            </div>
+        </div>
+        <div class="cardBox">
+            <div class="card" id="imola">
+               <div class="h4">24-25 Abril</div>
+             
+              <div class="content">
+                <div class="h3">Gran Premio de la Emilia Romaña</div>
+                <p>Circuito de Imola</p>
+              </div>
+            </div>
+        </div>
+        <div class="cardBox">
+            <div class="card" id="baku">
+               <div class="h4">1-2 Mayo</div>
+             
+              <div class="content">
+                <div class="h3">Gran Premio de Azerbaijan</div>
+                <p>Circuito Urbano de Bakú</p>
+              </div>
+            </div>
+        </div>
+        <div class="cardBox" >
+            <div class="card" id="qatar">
+               <div class="h4">8-9 Mayo</div>
+             
+              <div class="content">
+                <div class="h3">Gran Premio de Qatar</div>
+                <p>Circuito de Lusail</p>
+              </div>
+            </div>
+        </div>
+        <div class="cardBox">
+            <div class="card" id="spa">
+               <div class="h4">15-16 Mayo</div>
+             
+              <div class="content">
+                <div class="h3">Gran Premio de Bélgica</div>
+                <p>Circuito de Spa-Francorchamps</p>
+              </div>
+            </div>
+        </div>
+        <div class="cardBox">
+            <div class="card" id="canada">
+               <div class="h4">22-23 Mayo</div>
+             
+              <div class="content">
+                <div class="h3">Gran Premio de Canadá</div>
+                <p>Circuito de Guilles Villeneuve</p>
+              </div>
+            </div>
+        </div>
+        <div class="cardBox">
+            <div class="card" id="las_vegas">
+               <div class="h4">29-30 Mayo</div>
+             
+              <div class="content">
+                <div class="h3">Gran Premio de Las Vegas</div>
+                <p>Circuito Urbano de Las Vegas</p>
+              </div>
+            </div>
+        </div>
+        <div class="cardBox">
+            <div class="card" id="japon">
+               <div class="h4">5-6 Junio</div>
+             
+              <div class="content">
+                <div class="h3">Gran Premio de Japón</div>
+                <p>Circuito de Suzuka</p>
+              </div>
+            </div>
+        </div>
+
     </main>
     <style>
         footer{

@@ -1,0 +1,26 @@
+.card#imola{
+    background-image: url("../../attachments/tracks/imola.png");
+}
+.cardBox#imola::before{
+    background: -webkit-linear-gradient(to right, green, white, red);
+    background: linear-gradient(to right,green,white,red);
+}
+.skill-per.rectas.imola {
+    /*progreso de las diferentes lenguajes*/
+    width: 58%;
+}
+
+.skill-per.lentas.imola {
+/*progreso de las diferentes lenguajes*/
+width: 25%;
+}
+
+.skill-per.medias.imola {
+/*progreso de las diferentes lenguajes*/
+width: 58%;
+}
+
+.skill-per.rapidas.imola {
+/*progreso de las diferentes lenguajes*/
+width: 17%;
+}
