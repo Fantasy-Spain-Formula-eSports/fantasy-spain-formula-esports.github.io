@@ -1,5 +1,6 @@
 .card#barcelona{
     background-image: url("../../attachments/tracks/barcelona.png");
+    z-index: 0;
 }
 .cardBox#barcelona::before{
     background: -webkit-linear-gradient(to right, red, yellow, red);

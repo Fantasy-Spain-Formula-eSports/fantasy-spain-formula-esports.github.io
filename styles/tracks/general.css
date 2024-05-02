@@ -22,6 +22,7 @@ body{
 
 .card {
   position: absolute;
+  z-index: 0;
   width: 29rem;
   height: 15rem;
   background: whitesmoke;
@@ -224,7 +225,8 @@ transform: rotate(360deg);
     left:-3rem;z-index: -1;color: white;
     text-align: center;
   }
-  #boxText{
-    margin-left: 2rem;
+  [id^="boxText "]{
+    margin-left: 3rem;
     padding-left:2rem;padding-right: 2rem;
+    text-align:  justify;
   }

@@ -1,0 +1,27 @@
+.card#qatar{
+    background-image: url("../../attachments/tracks/qatar.png");
+    z-index: 0;
+}
+.cardBox#qatar::before{
+    background: -webkit-linear-gradient(to right, #8A1538, #FFFFFF, white);
+    background: linear-gradient(to right,#8A1538,white,#FFFFFF);
+}
+.skill-per.rectas.qatar {
+    /*progreso de las diferentes lenguajes*/
+    width: 45%;
+  }
+  
+  .skill-per.lentas.qatar {
+    /*progreso de las diferentes lenguajes*/
+    width: 8%;
+  }
+  
+  .skill-per.medias.qatar {
+    /*progreso de las diferentes lenguajes*/
+    width: 50%;
+  }
+  
+  .skill-per.rapidas.qatar {
+    /*progreso de las diferentes lenguajes*/
+    width: 42%;
+  }

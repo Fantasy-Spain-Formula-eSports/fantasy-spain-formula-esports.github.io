@@ -1,0 +1,26 @@
+.card#canada{
+    background-image: url("../../attachments/tracks/canada.png");
+}
+.cardBox#canada::before{
+    background: -webkit-linear-gradient(to right, red, white, red);
+    background: linear-gradient(to right,white,red,white);
+}
+.skill-per.rectas.canada {
+    /*progreso de las diferentes lenguajes*/
+    width: 55%;
+  }
+  
+  .skill-per.lentas.canada {
+    /*progreso de las diferentes lenguajes*/
+    width: 17%;
+  }
+  
+  .skill-per.medias.canada {
+    /*progreso de las diferentes lenguajes*/
+    width: 75%;
+  }
+  
+  .skill-per.rapidas.canada {
+    /*progreso de las diferentes lenguajes*/
+    width: 8%;
+  }

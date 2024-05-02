@@ -1,0 +1,27 @@
+.card#japan{
+    background-image: url("../../attachments/tracks/japon.png");
+
+}
+.cardBox#japan::before{
+    background: -webkit-linear-gradient(to right, white, red, white);
+    background: linear-gradient(to right,white,white,red,white,white);
+}
+.skill-per.rectas.japan {
+    /*progreso de las diferentes lenguajes*/
+    width: 38%;
+  }
+  
+  .skill-per.lentas.japan {
+    /*progreso de las diferentes lenguajes*/
+    width: 20%;
+  }
+  
+  .skill-per.medias.japan {
+    /*progreso de las diferentes lenguajes*/
+    width: 67%;
+  }
+  
+  .skill-per.rapidas.japan {
+    /*progreso de las diferentes lenguajes*/
+    width: 13%;
+  }

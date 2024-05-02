@@ -1,5 +1,6 @@
 .card#brasil{
     background-image: url("../../attachments/tracks/brasil.png");
+    z-index: 0;
 }
 .cardBox#brasil::before{
     background: -webkit-linear-gradient(to right, green, white, green);

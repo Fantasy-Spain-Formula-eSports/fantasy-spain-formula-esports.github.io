@@ -1,0 +1,26 @@
+.card#las_vegas{
+    background-image: url("../../attachments/tracks/las_vegas.png");
+}
+.cardBox#las_vegas::before{
+    background: -webkit-linear-gradient(to right, blue, white, red);
+    background: linear-gradient(to right,blue,white,red,white,red,white);
+}
+.skill-per.rectas.las_vegas {
+    /*progreso de las diferentes lenguajes*/
+    width: 64%;
+  }
+  
+  .skill-per.lentas.las_vegas {
+    /*progreso de las diferentes lenguajes*/
+    width: 33%;
+  }
+  
+  .skill-per.medias.las_vegas {
+    /*progreso de las diferentes lenguajes*/
+    width: 33%;
+  }
+  
+  .skill-per.rapidas.las_vegas {
+    /*progreso de las diferentes lenguajes*/
+    width: 34%;
+  }
