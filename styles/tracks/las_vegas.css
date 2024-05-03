@@ -1,5 +1,6 @@
 .card#las_vegas{
     background-image: url("../../attachments/tracks/las_vegas.png");
+    z-index: 0;
 }
 .cardBox#las_vegas::before{
     background: -webkit-linear-gradient(to right, blue, white, red);
