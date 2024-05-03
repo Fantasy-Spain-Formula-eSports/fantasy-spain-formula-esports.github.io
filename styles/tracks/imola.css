@@ -1,5 +1,6 @@
 .card#imola{
     background-image: url("../../attachments/tracks/imola.png");
+    z-index: 0;
 }
 .cardBox#imola::before{
     background: -webkit-linear-gradient(to right, green, white, red);
