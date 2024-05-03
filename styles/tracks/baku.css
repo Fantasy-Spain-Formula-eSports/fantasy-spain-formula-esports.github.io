@@ -1,5 +1,6 @@
 .card#baku{
     background-image: url("../../attachments/tracks/baku.png");
+    z-index: 0;
 }
 .cardBox#baku::before{
     background: -webkit-linear-gradient(to right, green, red, blue);
