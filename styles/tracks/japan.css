@@ -1,6 +1,6 @@
 .card#japan{
     background-image: url("../../attachments/tracks/japon.png");
-
+    z-index: 0;
 }
 .cardBox#japan::before{
     background: -webkit-linear-gradient(to right, white, red, white);
