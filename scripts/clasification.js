@@ -82,7 +82,7 @@ function show_data_driver(json,category) {
         '<td>'+json[index]["puntuaciones"][2]+'</td>'+
         '<td>'+json[index]["puntuaciones"][3]+'</td>'+
         '<td>'+json[index]["puntuaciones"][4]+'</td>'+
-        '<td>-</td>'+
+        '<td>'+json[index]["puntuaciones"][5]+'</td>'+
         '<td>-</td>'+
         '<td>-</td>'+
         '<td>-</td>'+
