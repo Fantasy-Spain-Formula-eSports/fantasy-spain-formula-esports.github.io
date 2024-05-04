@@ -291,8 +291,10 @@
 
             emailjs.sendForm(serviceID, templateID, this)
                 .then(() => {
+                    document.getElementById("message").value = ""
                     btn.value = 'Enviado!';
                 }, (err) => {
+                    document.getElementById("message").value = ""
                     btn.value = 'Error!';
                 });
         });
