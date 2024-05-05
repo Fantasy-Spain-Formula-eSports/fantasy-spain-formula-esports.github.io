@@ -1,0 +1,121 @@
+.card {
+    width: 14rem;
+    background: white;
+    padding: .4em;
+    margin-right: .2rem;
+    margin-bottom: 2rem;
+    border-radius: 6px;
+    z-index: 0;
+}
+#news_card{
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+.card-image {
+    /* background-color: rgb(236, 236, 236); */
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 15rem;
+    border-radius: 6px 6px 0 0;
+}
+
+.card-image:hover {
+    transform: scale(0.98);
+    cursor: pointer;
+}
+
+.category {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: 900;
+    padding: 10px 7px 0;
+}
+.category.Formula1{
+    color: rgb(230, 63, 63);
+}
+.category.Formula2{
+    color: rgb(63, 121, 230);
+}
+.category.Reservas{
+    color: rgb(83, 230, 63);
+}
+.category.FIA{
+    color: rgb(15, 12, 15);
+}
+
+.category:hover {
+    cursor: pointer;
+}
+
+.heading {
+    font-weight: 900;
+    color: rgb(88, 87, 87);
+    padding: 7px;
+    height: 3.5rem;
+}
+
+.description{
+    height: 6rem;
+    color: rgb(88, 87, 87);
+    padding: 7px;
+}
+
+.heading:hover {
+    cursor: pointer;
+}
+
+.author {
+    color: gray;
+    font-weight: 400;
+    font-size: 0.9em;
+    padding-top: 20px;
+}
+
+.name {
+    font-weight: 600;
+}
+
+.name:hover {
+    cursor: pointer;
+}
+
+
+
+[id^="show_new_"]{
+    width:90%;height:20rem;
+    background:rgb(78, 78, 78);
+    margin-bottom: 2rem;
+    justify-content: left;
+    border-radius: 2rem;
+    display: none;
+    flex-direction:column;
+    flex-wrap: wrap;
+}
+
+[id^="new_imagen_selected"]{
+    height: 100%;
+    width:30%;
+    background-color: red;
+    align-items: center;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+
+}
+[id^="new_text_selected"]{
+    width:70%;
+    height: 100%;
+    background-color: rgb(163, 78, 78);
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+[id^="title"]{
+    text-align: center;
+}
+[id^="content"]{
+    text-align: left;
+    padding-left: .5rem;
+}

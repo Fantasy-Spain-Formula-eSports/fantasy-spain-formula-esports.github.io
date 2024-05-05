@@ -1,0 +1,74 @@
+[
+    {
+        "title": "S1. El circuito urbano de Bakú no estará en la próxima temporada.",
+        "description": "Las accidentadas carreras y los múltiples SC ocurridos han provocado que esta carrera no esté en futuras temporadas.",
+        "category":"FIA",
+        "date":"03/05/2024",
+        "author":"Admin",
+        "image":"../../attachments/news/FIA.png",
+        "content": "Contenido de la noticia1"
+    },
+    {
+        "title": "S1. Victoria de Salla33 en su estreno con Williams Racing.",
+        "description": "Podio de XxJoanxX05 y Pablo Gutiérrez. XxJoanxX05 más líder. Los SC y VSC condicionaron la carrera de muchos.",
+        "category":"Formula1",
+        "date":"02/05/2024",
+        "author":"Admin",
+        "image":"../../attachments/news/azerbaijan.png",
+        "content": "Contenido de la noticia1"
+    },
+    {
+        "title": "S1. Gran victoria de Alexshaark11 con el Haas.",
+        "description": "Completa el podio Jhernandeez28 y Manuentre. Carrera muy accidentada, solo pudieron acabar 8 pilotos.",
+        "category":"Formula2",
+        "date":"01/05/2024",
+        "author":"Admin",
+        "image":"../../attachments/news/azerbaijan.png",
+        "content": "Contenido de la noticia1"
+    },
+    {
+        "title": "S1. IsiRobles24, el que más puntos consigió de Imola.",
+        "description": "Solo XxJoanxX05 que consigió 25, mantuvo el ritmo del Ferrari este fin de semana con Sprint.",
+        "category":"Formula1",
+        "date":"25/04/2024",
+        "author":"Admin",
+        "image":"../../attachments/news/italy.png",
+        "content": "Contenido de la noticia1"
+    },
+    {
+        "title": "S1. Victoria en JHernandeez28 en la loca carrera de F2.",
+        "description": "ManuEntre y SergioGamir completaron el podio. Gran lucha entre estos dos que fue decidida por la sanción a SergioGamir.",
+        "category":"Formula2",
+        "date":"24/04/2024",
+        "author":"Admin",
+        "image":"../../attachments/news/italy.png",
+        "content": "Contenido de la noticia1"
+    },
+    {
+        "title": "S1. Gran carrera de Marcos_cbkp en su estreno con Red Bull.",
+        "description": "El español cosechó un podio en su estreno en la F2 como reserva en el Circuito Internacional de Bahrain.",
+        "category":"Reservas",
+        "date":"24/04/2024",
+        "author":"Admin",
+        "image":"../../attachments/news/bahrain.png",
+        "content": "Contenido de la noticia1"
+    },
+    {
+        "title": "S1. Victoria de Pablo Gutiérrez de Alfa Romeo en la primera carrera.",
+        "description": "Le acompaña en el podio vWeird-daniX y XxJoanxX05. La vuelta rápida la obtuvo Anuel_doble_Z_93",
+        "category":"Formula1",
+        "date":"05/04/2024",
+        "author":"Admin",
+        "image":"../../attachments/news/spain.png",
+        "content": "Contenido de la noticia1"
+    },
+    {
+        "title": "S1. Ya se han elegidos los Circuitos para esta primera temporada.",
+        "description": "Serán: España, Barein, Brasil, Imola, Azerbaijan, Qatar, Bélgica, Canadá, Las Vegas y Japón.",
+        "category":"FIA",
+        "date":"01/04/2024",
+        "author":"Admin",
+        "image":"../../attachments/news/FIA.png",
+        "content": "Contenido de la noticia1"
+    }
+]
