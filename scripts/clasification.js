@@ -2,18 +2,18 @@
 // Función para calcular las puntuaciones por carrera para cada piloto
 function calcularPuntuacionesPorPiloto(data) {
     const puntuacionesPorPiloto = {};
-
+    const puntuacionesPorPiloto_Equipo = {}
     data.forEach(driver => {
         const piloto = driver.driver_name;
         const puntuaciones = driver.score;
-
+        const team = driver.team;
         if (puntuacionesPorPiloto[piloto]) {
             puntuacionesPorPiloto[piloto] = puntuacionesPorPiloto[piloto].map((val, index) => val + puntuaciones[index]);
         } else {
             puntuacionesPorPiloto[piloto] = puntuaciones;
         }
-    });
 
+    });
     return puntuacionesPorPiloto;
 }
 
@@ -71,12 +71,53 @@ function get_data() {
     get_formula_dos_data()
 }
 
+function get_color_team(team) {
+    let color;
+    switch (team) {
+        case "Mercedes-AMG":
+            color = "#565F64";
+            break;
+        case "Ferrari":
+            color = "red";
+            break;
+        case "Red Bull Racing":
+            color = "#121F45";
+            break;
+        case "McLaren":
+            color = "#ff9900";
+            break;
+        case "Aston Martin":
+            color = "#037A68";
+            break;
+        case "Alpine":
+            color = "#0044ff";
+            break;
+        case "Alfa Romeo":
+            color = "#A42134";
+            break;
+        case "Williams Racing":
+            color = "#00A0DE";
+            break;
+        case "AlphaTauri":
+            color = "#20394C";
+            break;
+        case "Haas":
+            color = "white; color:black";
+            break;
+        default:  // Por si acaso, que no pasará nunca
+            color = "GRAY";
+    }
+    return color;
+
+}
+
 function show_data_driver(json,category) {
     document.querySelector('body').style="min-height: 130rem";
     document.getElementById(category+"-drivers-table").innerHTML = ""
-    for (let index = 0; index < json.length; index++) {        
+    for (let index = 0; index < json.length; index++) {
+
         document.getElementById(category+"-drivers-table").innerHTML += '<tr>'+
-        '<td style="background-color: red;">'+json[index]["piloto"]+'</td>' +
+        '<td style="background-color:red;min-width:10rem;max-width:10rem;">'+json[index]["piloto"]+'</td>' +
         '<td>'+json[index]["puntuaciones"][0]+'</td>'+
         '<td>'+json[index]["puntuaciones"][1]+'</td>'+
         '<td>'+json[index]["puntuaciones"][2]+'</td>'+
@@ -94,15 +135,17 @@ function show_data_driver(json,category) {
 
 function show_data_team(json,category) {
     document.getElementById(category+"-teams-table").innerHTML = ""
-    for (let index = 0; index < json.length; index++) {        
+    for (let index = 0; index < json.length; index++) {
+        color_team = get_color_team(json[index]["equipo"])
+        console.info(json[index])        
         document.getElementById(category+"-teams-table").innerHTML += '<tr>'+
-        '<td style="background-color: red;">'+json[index]["equipo"]+'</td>' +
+        '<td style="background-color:'+color_team+';min-width:10rem;max-width:10rem;">'+json[index]["equipo"]+'</td>' +
         '<td>'+json[index]["puntuaciones"][0]+'</td>'+
         '<td>'+json[index]["puntuaciones"][1]+'</td>'+
         '<td>'+json[index]["puntuaciones"][2]+'</td>'+
         '<td>'+json[index]["puntuaciones"][3]+'</td>'+
         '<td>'+json[index]["puntuaciones"][4]+'</td>'+
-        '<td>-</td>'+
+        '<td>'+json[index]["puntuaciones"][5]+'</td>'+
         '<td>-</td>'+
         '<td>-</td>'+
         '<td>-</td>'+
