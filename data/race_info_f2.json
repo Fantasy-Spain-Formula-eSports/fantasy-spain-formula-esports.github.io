@@ -11,7 +11,7 @@
     },
     {
         "driver_name": "sergiogamir",
-        "score": [19, 18, 0, 15, 8,0],
+        "score": [19, 18, 0, 15, 6,0],
         "team": "Mercedes-AMG"
     },
     {
@@ -26,7 +26,7 @@
     },
     {
         "driver_name": "Dylanrb8-.-",
-        "score": [12, 10, 26, 0, 4,0],
+        "score": [12, 10, 26, 0, 1,0],
         "team": "Ferrari"
     },
     {
@@ -40,7 +40,7 @@
     },
     {
         "driver_name": "Samuejea17",
-        "score": [7, 4, 8, 8, 4,0],
+        "score": [7, 4, 8, 8, 2,0],
         "team": "Red Bull"
     },
     {
@@ -70,7 +70,7 @@
     },
     {
         "driver_name": "pacheking83",
-        "score": [0, 8, 0, 4, 6,0],
+        "score": [0, 8, 0, 4, 4,0],
         "team": "Alpine"
     },
     {
@@ -84,8 +84,8 @@
         "team": "McLaren"
     },
     {
-        "driver_name": "nicoquillen02",
-        "score": [0, 0, 0, 0, 0,0],
+        "driver_name": "marcos_cbkp",
+        "score": [0, 0, 0, 0, 10,0],
         "team": "Aston Martin"
     },
     {
@@ -95,7 +95,7 @@
     },
     {
         "driver_name": "sergi_seis_gm",
-        "score": [0, 0, 0, 10, 10,0],
+        "score": [0, 0, 0, 10, 8,0],
         "team": "AlphaTauri"
     },
     {
@@ -105,7 +105,7 @@
     },
     {
         "driver_name": "xabilaura",
-        "score": [0, 0, 12, 0, 1,0],
+        "score": [0, 0, 12, 0, 0,0],
         "team": "Alfa Romeo"
     }
 
