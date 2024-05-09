@@ -73,6 +73,7 @@ function get_data() {
 
 function get_color_team(team) {
     let color;
+    console.info(team, "Red Bull Racing","Red Bull Racing" == team)
     switch (team) {
         case "Mercedes-AMG":
             color = "#565F64";
@@ -81,7 +82,8 @@ function get_color_team(team) {
             color = "red";
             break;
         case "Red Bull Racing":
-            color = "#121F45";
+            color = "#121F45;color:white;";
+            console.info("Dentro")
             break;
         case "McLaren":
             color = "#ff9900";
@@ -105,7 +107,8 @@ function get_color_team(team) {
             color = "white; color:black";
             break;
         default:  // Por si acaso, que no pasará nunca
-            color = "GRAY";
+            color = "blue;";
+            console.info("Por qué??")
     }
     return color;
 
@@ -136,8 +139,7 @@ function show_data_driver(json,category) {
 function show_data_team(json,category) {
     document.getElementById(category+"-teams-table").innerHTML = ""
     for (let index = 0; index < json.length; index++) {
-        color_team = get_color_team(json[index]["equipo"])
-        console.info(json[index])        
+        color_team = get_color_team(json[index]["equipo"])     
         document.getElementById(category+"-teams-table").innerHTML += '<tr>'+
         '<td style="background-color:'+color_team+';min-width:10rem;max-width:10rem;">'+json[index]["equipo"]+'</td>' +
         '<td>'+json[index]["puntuaciones"][0]+'</td>'+
