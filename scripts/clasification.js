@@ -57,6 +57,7 @@ function ordenarEquiposPorPuntuacion(puntuacionesPorEquipo) {
 
 
 function show_formula_uno() {
+    document.querySelector('body').style="min-height: 125rem";
     if (document.getElementById('formula-uno').style.display == 'block') {
         document.getElementById('formula-uno').style.display = 'none';
         document.getElementById('formula-dos').style.display = 'none';
@@ -70,6 +71,7 @@ function show_formula_uno() {
 }
 
 function show_formula_dos() {
+    document.querySelector('body').style="min-height: 137rem";
     if (document.getElementById('formula-dos').style.display == 'block') {
         document.getElementById('formula-uno').style.display = 'none';
         document.getElementById('formula-dos').style.display = 'none';
@@ -140,7 +142,7 @@ function get_color_team(team) {
 }
 
 function show_data_driver(json,category) {
-    document.querySelector('body').style="min-height: 130rem";
+    
     document.getElementById(category+"-drivers-table").innerHTML = ""
     for (let index = 0; index < json.length; index++) {
 
