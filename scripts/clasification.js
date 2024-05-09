@@ -178,6 +178,7 @@ function show_data_team(json,category) {
         '<td>-</td>'+
         '<td>-</td>'+
         '<td>-</td>'+
+        '<td>-</td>'+
         '<td style="background-color: red;">'+json[index]["puntuacionTotal"]+'</td>'+
       '</tr>'
     }   
