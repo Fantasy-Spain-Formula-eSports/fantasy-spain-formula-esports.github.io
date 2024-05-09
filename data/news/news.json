@@ -1,5 +1,23 @@
 [
     {
+        "title": "S1. Victoria de Isi_Robles, es el equipo que más puntúa en Qatar.",
+        "description": "Podio de Pablo Gutiérrez y XxJoanxX05. XxJoanxX05 se lleva la vuelta rápida, aunque pierde algo de terreno con Isi_Robles.",
+        "category":"Formula1",
+        "date":"02/05/2024",
+        "author":"Admin",
+        "image":"../../attachments/news/qatar.png",
+        "content": "Contenido de la noticia1"
+    },
+    {
+        "title": "S1. Otra gran victoria de Dylanrb8-.-!!.",
+        "description": "Completa el podio, otra vez, Jhernandeez28 y Manuentre. Hubo que repetir la salida por un accidente múltiple. Dylanrb-.- más cerca del líder, Alexshaark11",
+        "category":"Formula2",
+        "date":"01/05/2024",
+        "author":"Admin",
+        "image":"../../attachments/news/qatar.png",
+        "content": "Contenido de la noticia1"
+    },
+    {
         "title": "S1. El circuito urbano de Bakú no estará en la próxima temporada.",
         "description": "Las accidentadas carreras y los múltiples SC ocurridos han provocado que esta carrera no esté en futuras temporadas.",
         "category":"FIA",
