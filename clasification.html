@@ -12,9 +12,9 @@
 <body onload="get_data()">
     <style>
         body{
-			margin: 0;
-			padding: 0;
-            min-width: 1000px;
+            margin: 0;
+            padding: 0;
+            min-width: 1150px;
             /* min-height: 130rem; */
             overflow:scroll;
             overflow-x:auto;
@@ -79,7 +79,7 @@
             to{background-color: white;color:black;box-shadow: 0px 5px 20px 0px rgba(255, 0, 0, 0.7); }
         }
     </style>
-    <header>Clasificación<div style="font-size:large;margin-top: 1rem;">Pulsa en la categoría para ver la clasificación:</div><div><button onclick="show_formula_uno()">Formula Uno</button><button onclick="show_formula_dos()" style="margin-left: 1rem;">Formula Dos</button></div></header>
+    <header>Clasificación<div style="font-size:large;margin-top: 1rem;">Pulsa en la categoría para ver la clasificación:</div><div><button onclick="show_formula_uno()">Formula Uno</button><button onclick="show_formula_dos()" style="margin-left: 1rem;">Formula Dos</button><button onclick="show_FIA_points()" style="margin-left: 1rem;display:none;">Superlicencia</button></div></header>
     <style>
         main{
             height: max-content;
@@ -121,7 +121,8 @@
                 <thead>
                   <tr>
                     <th style="background-color: red;font-weight: bold;">Piloto</th>
-                    <th>España</th>
+                    <th>España Sprint</th>
+                    <th>España Carrera</th>
                     <th>Barein</th>
                     <th>Brasil</th>
                     <th>Imola</th>
@@ -148,7 +149,9 @@
                     <td id="driver_1_race_08">Data 9</td>
                     <td id="driver_1_race_09">Data 10</td>
                     <td id="driver_1_race_10">Data 11</td>
-                    <td id="driver_1_total_point" style="background-color: red;">Data 12</td>
+                    <td id="driver_1_race_10">Data 12</td>
+                    <td id="driver_1_race_10">Data 13</td>
+                    <td id="driver_1_total_point" style="background-color: red;">Data 13</td>
                   </tr>
                 </tbody>
             </table>
@@ -193,7 +196,8 @@
                 <thead>
                   <tr>
                     <th style="background-color: red;">Piloto</th>
-                    <th>España</th>
+                    <th>España Sprint</th>
+                    <th>España Carrera</th>
                     <th>Barein</th>
                     <th>Brasil</th>
                     <th>Imola</th>
@@ -228,7 +232,8 @@
                 <thead>
                   <tr>
                     <th style="background-color: white;color: black;">Equipo</th>
-                    <th>España</th>
+                    <th>España Sprint</th>
+                    <th>España Carrera</th>
                     <th>Barein</th>
                     <th>Brasil</th>
                     <th>Imola</th>
@@ -260,6 +265,68 @@
                 </tbody>
             </table>
         </div>
+        <div id="fia-points" style="display: none;">
+          <div id="fia-points-table" style="display: flex;">
+            <table id="fia-points-f1-drivers-table" style="margin: auto;border:1px solid white;">
+              <thead>
+                <tr>
+                  <th style="background-color: red;">Piloto</th>
+                  <th>Categoría</th>
+                  <th style="background-color: red;">Puntos</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Repeat the following row 20 times -->
+                <tr>
+                  <td style="background-color: red;">Nombre</td>
+                  <td>Data 2</td>
+                  <td style="background-color: red;">Data 12</td>
+                </tr>
+              </tbody>
+            </table>
+            <table id="fia-points-f2-drivers-table" style="margin: auto;border:1px solid white;">
+                <thead>
+                  <tr>
+                    <th style="background-color: red;">Piloto</th>
+                    <th>Categoría</th>
+                    <th style="background-color: red;">Puntos SuperLicencia</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- Repeat the following row 20 times -->
+                  <tr>
+                    <td style="background-color: white;color: black;">Driver</td>
+                    <td>Data 2</td>
+                    <td style="background-color: red;">Data 3</td>
+                  </tr>
+                </tbody>
+            </table>
+          </div>
+          <br>
+          <div>
+            <table id="fia-points-statement" style="margin: auto;border:1px solid white;">
+              <thead>
+                <tr>
+                  <th style="background-color: white;color: black;">Piloto</th>
+                  <th>Escudería</th>
+                  <th>Categoría</th>
+                  <th>Explicación</th>
+                  <th style="background-color: red;">Puntos</th>
+                </tr>
+              </thead>
+              <tbody id="f2-teams-table">
+                <!-- Repeat the following row 20 times -->
+                <tr>
+                  <td style="background-color: white;color: black;">Driver</td>
+                  <td>Data 1</td>
+                  <td>Data 2</td>
+                  <td>Data 3</td>
+                  <td style="background-color: red;">Data 4</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+      </div>
     </main>
     <style>
         footer{
