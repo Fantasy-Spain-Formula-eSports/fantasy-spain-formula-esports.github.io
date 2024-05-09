@@ -57,13 +57,40 @@ function ordenarEquiposPorPuntuacion(puntuacionesPorEquipo) {
 
 
 function show_formula_uno() {
-    document.getElementById('formula-uno').style.display = 'block';
-    document.getElementById('formula-dos').style.display = 'none';
+    if (document.getElementById('formula-uno').style.display == 'block') {
+        document.getElementById('formula-uno').style.display = 'none';
+        document.getElementById('formula-dos').style.display = 'none';
+        document.getElementById('fia-points').style.display = 'none';
+    }else{
+        document.getElementById('formula-uno').style.display = 'block';
+        document.getElementById('formula-dos').style.display = 'none';
+        document.getElementById('fia-points').style.display = 'none';
+    }
+
 }
 
 function show_formula_dos() {
-    document.getElementById('formula-uno').style.display = 'none';
-    document.getElementById('formula-dos').style.display = 'block';
+    if (document.getElementById('formula-dos').style.display == 'block') {
+        document.getElementById('formula-uno').style.display = 'none';
+        document.getElementById('formula-dos').style.display = 'none';
+        document.getElementById('fia-points').style.display = 'none';
+    }else{
+        document.getElementById('formula-uno').style.display = 'none';
+        document.getElementById('formula-dos').style.display = 'block';
+        document.getElementById('fia-points').style.display = 'none';
+    }
+}
+
+function show_FIA_points() {
+    if (document.getElementById('fia-points').style.display == 'block') {
+        document.getElementById('formula-uno').style.display = 'none';
+        document.getElementById('formula-dos').style.display = 'none';
+        document.getElementById('fia-points').style.display = 'none';
+    }else{
+        document.getElementById('formula-uno').style.display = 'none';
+        document.getElementById('formula-dos').style.display = 'none';
+        document.getElementById('fia-points').style.display = 'block';
+    }
 }
 
 function get_data() {
@@ -73,7 +100,6 @@ function get_data() {
 
 function get_color_team(team) {
     let color;
-    console.info(team, "Red Bull Racing","Red Bull Racing" == team)
     switch (team) {
         case "Mercedes-AMG":
             color = "#565F64";
@@ -83,7 +109,6 @@ function get_color_team(team) {
             break;
         case "Red Bull Racing":
             color = "#121F45;color:white;";
-            console.info("Dentro")
             break;
         case "McLaren":
             color = "#ff9900";
@@ -127,6 +152,7 @@ function show_data_driver(json,category) {
         '<td>'+json[index]["puntuaciones"][3]+'</td>'+
         '<td>'+json[index]["puntuaciones"][4]+'</td>'+
         '<td>'+json[index]["puntuaciones"][5]+'</td>'+
+        '<td>'+json[index]["puntuaciones"][6]+'</td>'+
         '<td>-</td>'+
         '<td>-</td>'+
         '<td>-</td>'+
@@ -148,7 +174,7 @@ function show_data_team(json,category) {
         '<td>'+json[index]["puntuaciones"][3]+'</td>'+
         '<td>'+json[index]["puntuaciones"][4]+'</td>'+
         '<td>'+json[index]["puntuaciones"][5]+'</td>'+
-        '<td>-</td>'+
+        '<td>'+json[index]["puntuaciones"][6]+'</td>'+
         '<td>-</td>'+
         '<td>-</td>'+
         '<td>-</td>'+
