@@ -90,12 +90,12 @@
     },
     {
         "driver_name": "marcos_cbkp",
-        "score": [0,0, 15, 0, 0, 0,0,18],
+        "score": [0,0, 15, 0, 0, 0,0,0],
         "team": "Red Bull Racing"
     },
     {
         "driver_name": "marcos_cbkp",
-        "score": [0,0, 0, 0, 0, 10,0,0],
+        "score": [0,0, 0, 0, 0, 10,0,18],
         "team": "Aston Martin"
     },
     {
