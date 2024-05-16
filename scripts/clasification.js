@@ -155,7 +155,7 @@ function show_data_driver(json,category) {
         '<td>'+json[index]["puntuaciones"][4]+'</td>'+
         '<td>'+json[index]["puntuaciones"][5]+'</td>'+
         '<td>'+json[index]["puntuaciones"][6]+'</td>'+
-        '<td>-</td>'+
+        '<td>'+json[index]["puntuaciones"][7]+'</td>'+
         '<td>-</td>'+
         '<td>-</td>'+
         '<td>-</td>'+
@@ -177,7 +177,7 @@ function show_data_team(json,category) {
         '<td>'+json[index]["puntuaciones"][4]+'</td>'+
         '<td>'+json[index]["puntuaciones"][5]+'</td>'+
         '<td>'+json[index]["puntuaciones"][6]+'</td>'+
-        '<td>-</td>'+
+        '<td>'+json[index]["puntuaciones"][7]+'</td>'+
         '<td>-</td>'+
         '<td>-</td>'+
         '<td>-</td>'+
@@ -230,8 +230,3 @@ function get_formula_dos_data() {
         console.log(error);
       });
 }
-
-
-
-
-
