@@ -11,7 +11,7 @@
     },
     {
         "driver_name": "xxJoanxX05",
-        "score": [0,15, 26, 15, 25, 18,16,15],
+        "score": [0,15, 26, 15, 25, 18,16,12],
         "team": "Alpine"
     },
     {
@@ -50,7 +50,7 @@
     },
     {
         "driver_name": "ARGOTE_80",
-        "score": [0,0, 6, 0, 15, 0,0,10],
+        "score": [0,0, 6, 0, 15, 0,0,8],
         "team": "Aston Martin"
     },
     {
@@ -65,7 +65,7 @@
     },
     {
         "driver_name": "JAndujar81",
-        "score": [0,0, 0, 0, 3, 10,0,8],
+        "score": [0,0, 0, 0, 3, 10,0,6],
         "team": "Haas"
     },
     {
@@ -79,13 +79,18 @@
         "team": "Alfa Romeo"
     },
     {
+        "driver_name": "IRTmiguelon1998",
+        "score": [0,0, 0, 0, 0, 0,0,15],
+        "team": "Alfa Romeo"
+    },
+    {
         "driver_name": "Serbalesa12",
         "score": [0,0, 4, 4, 10, 0,0,4],
         "team": "McLaren"
     },
     {
         "driver_name": "PRL_Jav1LTON",
-        "score": [0,0, 0, 0, 0, 1,6,12],
+        "score": [0,0, 0, 0, 0, 1,6,10],
         "team": "Haas"
     },
     {
