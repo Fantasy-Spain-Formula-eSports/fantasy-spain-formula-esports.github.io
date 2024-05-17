@@ -84,7 +84,7 @@ function show_formula_dos() {
 }
 
 function show_FIA_points() {
-    document.querySelector('body').style="min-height: 130rem";
+    document.querySelector('body').style="min-height: 140rem";
     if (document.getElementById('fia-points').style.display == 'block') {
         document.getElementById('formula-uno').style.display = 'none';
         document.getElementById('formula-dos').style.display = 'none';
