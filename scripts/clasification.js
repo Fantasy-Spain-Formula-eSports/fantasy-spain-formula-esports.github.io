@@ -57,7 +57,7 @@ function ordenarEquiposPorPuntuacion(puntuacionesPorEquipo) {
 
 
 function show_formula_uno() {
-    document.querySelector('body').style="min-height: 125rem";
+    document.querySelector('body').style="min-height: 130rem";
     if (document.getElementById('formula-uno').style.display == 'block') {
         document.getElementById('formula-uno').style.display = 'none';
         document.getElementById('formula-dos').style.display = 'none';
@@ -84,6 +84,7 @@ function show_formula_dos() {
 }
 
 function show_FIA_points() {
+    document.querySelector('body').style="min-height: 130rem";
     if (document.getElementById('fia-points').style.display == 'block') {
         document.getElementById('formula-uno').style.display = 'none';
         document.getElementById('formula-dos').style.display = 'none';

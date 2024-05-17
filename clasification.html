@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=1000; user-scalable=0;" />
+    <meta name="viewport" content="width=1150, user-scalable=0" />
     <title>Fantasy Spain Formula eSports</title>
     <script src="./scripts/clasification.js" defer></script>
+    <script src="./scripts/FIA_data.js" defer></script>
+
     <link rel="icon" type="image/x-icon" href="./attachments/icon.png">
     <link rel="stylesheet" href="./styles/nav/nav.css">
 </head>
@@ -79,7 +81,14 @@
             to{background-color: white;color:black;box-shadow: 0px 5px 20px 0px rgba(255, 0, 0, 0.7); }
         }
     </style>
-    <header>Clasificación<div style="font-size:large;margin-top: 1rem;">Pulsa en la categoría para ver la clasificación:</div><div><button onclick="show_formula_uno()">Formula Uno</button><button onclick="show_formula_dos()" style="margin-left: 1rem;">Formula Dos</button><button onclick="show_FIA_points()" style="margin-left: 1rem;display:none;">Superlicencia</button></div></header>
+    <header>
+      Clasificación<div style="font-size:large;margin-top: 1rem;">Pulsa en la categoría para ver la clasificación:</div>
+      <div>
+        <button onclick="show_formula_uno()">Formula Uno</button>
+        <button onclick="show_formula_dos()" style="margin-left: 1rem;">Formula Dos</button>
+        <button onclick="show_FIA_points()" style="margin-left: 1rem;">FIA</button>
+      </div>
+    </header>
     <style>
         main{
             height: max-content;
@@ -267,67 +276,70 @@
             </table>
         </div>
         <div id="fia-points" style="display: none;">
-          <div id="fia-points-table" style="display: flex;">
-            <table id="fia-points-f1-drivers-table" style="margin: auto;border:1px solid white;">
+          <h3>En estas tablas se muestran</h3>
+          <div id="fia-points-table" style="justify-content: center;display: flex;flex-wrap: wrap;">
+            
+            <br>
+            <table id="fia-points-f1-drivers-table" style="border:1px solid white;">
+              <caption style="font-size: xx-large;font-weight: 900; background-color:gold;color: black;border-top-left-radius: 2rem;border-top-right-radius: 2rem;">Formula Uno</caption>
               <thead>
                 <tr>
-                  <th style="background-color: red;">Piloto</th>
-                  <th>Categoría</th>
+                  <th style="background-color: red;width: 12rem;">Piloto</th>
                   <th style="background-color: red;">Puntos</th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody id="fia-points-f1-drivers-table-body1">
                 <!-- Repeat the following row 20 times -->
                 <tr>
                   <td style="background-color: red;">Nombre</td>
-                  <td>Data 2</td>
                   <td style="background-color: red;">Data 12</td>
                 </tr>
               </tbody>
             </table>
-            <table id="fia-points-f2-drivers-table" style="margin: auto;border:1px solid white;">
-                <thead>
-                  <tr>
-                    <th style="background-color: red;">Piloto</th>
-                    <th>Categoría</th>
-                    <th style="background-color: red;">Puntos SuperLicencia</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <!-- Repeat the following row 20 times -->
-                  <tr>
-                    <td style="background-color: white;color: black;">Driver</td>
-                    <td>Data 2</td>
-                    <td style="background-color: red;">Data 3</td>
-                  </tr>
-                </tbody>
-            </table>
-          </div>
-          <br>
-          <div>
-            <table id="fia-points-statement" style="margin: auto;border:1px solid white;">
+            <table id="fia-points-f2-drivers-table" style="margin-left:4rem;border:1px solid white;">
+              <caption style="font-size: xx-large;font-weight: 900; background-color:silver;color: black;border-top-left-radius: 2rem;border-top-right-radius: 2rem;">Formula Uno</caption>
               <thead>
                 <tr>
-                  <th style="background-color: white;color: black;">Piloto</th>
-                  <th>Escudería</th>
-                  <th>Categoría</th>
-                  <th>Explicación</th>
+                  <th style="background-color: red;width: 12rem;">Piloto</th>
                   <th style="background-color: red;">Puntos</th>
                 </tr>
               </thead>
-              <tbody id="f2-teams-table">
+              <tbody id="fia-points-f2-drivers-table-body1">
                 <!-- Repeat the following row 20 times -->
                 <tr>
-                  <td style="background-color: white;color: black;">Driver</td>
-                  <td>Data 1</td>
-                  <td>Data 2</td>
-                  <td>Data 3</td>
-                  <td style="background-color: red;">Data 4</td>
+                  <td style="background-color: red;">Nombre</td>
+                  <td style="background-color: red;">Data 12</td>
                 </tr>
               </tbody>
             </table>
           </div>
-      </div>
+          <br>
+          <div id="fia-statement">
+            <table id="fia-points-statement" style="margin: auto;border:1px solid white;">
+              <thead>
+                <tr>
+                  <th style="background-color: white;color:black;">Piloto</th>
+                  <th style="width: 6rem;">Categoría</th>
+                  <th style="width: 25rem;background-color: white;color:black;">Explicación</th>
+                  <th>Fecha</th>
+                  <th style="background-color: red;">Penalty</th>
+                </tr>
+              </thead>
+              <tbody id="fia-points-statement-table">
+                <!-- Repeat the following row 20 times -->
+                <tr>
+                  <td style="background-color: black;color:whitesmoke;">Driver</td>
+                  <td>Data 2</td>
+                  <td>Data 3</td>
+                  <td>Data 4</td>
+                  <td style="background-color: red;">Data 5</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+
     </main>
     <style>
         footer{
