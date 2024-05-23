@@ -1,9 +1,27 @@
 [
     {
+        "title": "S1. Brutal estreno como reserva de borjabu2001",
+        "description": "En su estreno consigió colarse con el Red Bull en el podio!! Lastima que su posicón no cuente para el mundial...",
+        "category":"Reservas",
+        "date":"24/05/2024",
+        "author":"Admin",
+        "image":"../../attachments/news/canada.png",
+        "content": "Contenido de la noticia1"
+    },
+    {
+        "title": "S1. Dominio absoluto de VWEIRD-DANIX que quiere pelear el mundial",
+        "description": "Victoria de VWEIRD-DANIX con la vuelta rápida. Dominio casi absoluto suyo. Le acompaña en el podio pichi1994RMCF y SeRgii0_PrO_.",
+        "category":"Formula1",
+        "date":"24/05/2024",
+        "author":"Admin",
+        "image":"../../attachments/news/canada.png",
+        "content": "Contenido de la noticia1"
+    },
+    {
         "title": "S1. Brutal final de carrera en Canadá!",
         "description": "Victoria de Alexshaark11 por tres décimas sobre ManuEntre! completa el podio SergioGamir. Alexshaark lidera ahora el mundial.",
         "category":"Formula2",
-        "date":"16/05/2024",
+        "date":"23/05/2024",
         "author":"Admin",
         "image":"../../attachments/news/canada.png",
         "content": "Contenido de la noticia1"
