@@ -158,7 +158,7 @@ function show_data_driver(json,category) {
         '<td>'+json[index]["puntuaciones"][6]+'</td>'+
         '<td>'+json[index]["puntuaciones"][7]+'</td>'+
         '<td>'+json[index]["puntuaciones"][8]+'</td>'+
-        '<td>-</td>'+
+        '<td>'+json[index]["puntuaciones"][9]+'</td>'+
         '<td>-</td>'+
         '<td style="background-color: red;">'+json[index]["puntuacionTotal"]+'</td>'+
       '</tr>'
@@ -180,7 +180,7 @@ function show_data_team(json,category) {
         '<td>'+json[index]["puntuaciones"][6]+'</td>'+
         '<td>'+json[index]["puntuaciones"][7]+'</td>'+
         '<td>'+json[index]["puntuaciones"][8]+'</td>'+
-        '<td>-</td>'+
+        '<td>'+json[index]["puntuaciones"][9]+'</td>'+
         '<td>-</td>'+
         '<td style="background-color: red;">'+json[index]["puntuacionTotal"]+'</td>'+
       '</tr>'
