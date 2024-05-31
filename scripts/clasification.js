@@ -57,7 +57,7 @@ function ordenarEquiposPorPuntuacion(puntuacionesPorEquipo) {
 
 
 function show_formula_uno() {
-    document.querySelector('body').style="min-height: 140rem";
+    document.querySelector('body').style="min-height: 150rem";
     if (document.getElementById('formula-uno').style.display == 'block') {
         document.getElementById('formula-uno').style.display = 'none';
         document.getElementById('formula-dos').style.display = 'none';
@@ -84,7 +84,7 @@ function show_formula_dos() {
 }
 
 function show_FIA_points() {
-    document.querySelector('body').style="min-height: 160rem";
+    document.querySelector('body').style="min-height: 150rem";
     if (document.getElementById('fia-points').style.display == 'block') {
         document.getElementById('formula-uno').style.display = 'none';
         document.getElementById('formula-dos').style.display = 'none';
@@ -187,11 +187,41 @@ function show_data_team(json,category) {
     }   
 }
 
+// Función para obtener la mayor puntuación de un array
+function obtenerMayorPuntuacion(puntuaciones) {
+    return Math.max(...puntuaciones);
+}
+
+// Función para obtener las N mejores puntuaciones de un array
+function obtenerMejoresPuntuaciones(puntuaciones, n) {
+    return puntuaciones.slice().sort((a, b) => b - a).slice(0, n);
+}
+
+// Función para ordenar pilotos
+function ordenarPilotos(pilotos) {
+    return pilotos.sort((a, b) => {
+        if (a.puntuacionTotal === b.puntuacionTotal) {
+            const mejoresPuntuacionesA = obtenerMejoresPuntuaciones(a.puntuaciones, 2);
+            const mejoresPuntuacionesB = obtenerMejoresPuntuaciones(b.puntuaciones, 2);
+            for (let i = 0; i < mejoresPuntuacionesA.length; i++) {
+                if (mejoresPuntuacionesA[i] !== mejoresPuntuacionesB[i]) {
+                    return mejoresPuntuacionesB[i] - mejoresPuntuacionesA[i];
+                }
+            }
+        }
+        return b.puntuacionTotal - a.puntuacionTotal;
+    });
+}
+
+
 function manage_formula_driver_data(data,category) {
     // Calcular las puntuaciones por piloto
     const puntuacionesPorPiloto = calcularPuntuacionesPorPiloto(data);
     // Ordenar los pilotos por su puntuación total
-    const pilotosOrdenados = ordenarPilotosPorPuntuacion(puntuacionesPorPiloto);
+    var pilotosOrdenados = ordenarPilotosPorPuntuacion(puntuacionesPorPiloto);
+
+    // Ordenar los pilotos
+    pilotosOrdenados = ordenarPilotos(pilotosOrdenados);
     show_data_driver(pilotosOrdenados,category)
 }
 
@@ -200,7 +230,9 @@ function manage_formula_teams_data(data,category) {
     const puntuacionesPorEquipo = calcularPuntuacionesPorEquipo(data);
 
     // Ordenar los equipos por su puntuación total
-    const equiposOrdenados = ordenarEquiposPorPuntuacion(puntuacionesPorEquipo);
+    const equiposOrdenados = ordenarPilotos(ordenarEquiposPorPuntuacion(puntuacionesPorEquipo));
+    console.table(equiposOrdenados)
+
     show_data_team(equiposOrdenados,category)
 }
 
