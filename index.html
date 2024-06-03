@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=1000; user-scalable=0;" />
+    <meta name="viewport" content="width=1000, user-scalable=0" />
     <title>Fantasy Spain Formula eSports</title>
     <link rel="icon" type="image/x-icon" href="./attachments/icon.png">
     <link rel="stylesheet" href="./styles/nav/nav.css">
     <link rel="stylesheet" href="./styles/index/index.css">
+    <script src="scripts/index.js" defer></script>
 </head>
 
 <body>
@@ -46,12 +47,10 @@
             width: 100%;
             margin: 0 auto;
             color:#f3eeee;
-            background-image: url('./attachments/next_races/japan_background.jpg');
             background-color: black;
             background-size:cover;
             background-repeat: no-repeat;
-            background-position: top;
-            background-position: right;
+            background-position:right bottom;
             
         }
         #show_bg_2 {
@@ -65,11 +64,11 @@
             
         }
     </style>
-    <header>
+    <header id="header_index" style="background-image: url('./attachments/next_races/japan_background.jpg');">
         <div id="show_bg_2">
-            <h1 style="font-weight: 900;font-size: 4.5rem;">Gran Premio de Japón</h1>
-            <h2>Circuito de Suzuka 5-6 de Junio 2024 - 22:00h</h2>
-            <img src="./attachments/country/japan.png" alt="country" width="150rem" style="margin-left: 10rem;">
+            <h1 id="gp_name" style="font-weight: 900;font-size: 4.5rem;">Gran Premio de Japón</h1>
+            <h2 id="track_name">Circuito de Suzuka 5-6 de Junio 2024 - 22:00h</h2>
+            <img id="img_country" src="./attachments/country/japan.png" alt="country" width="150rem" style="margin-left: 10rem;">
             <h4 style="margin-left: 7rem;">Fantasy Spain Formula eSports©</h4>
         </div>
     </header>
