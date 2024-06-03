@@ -1,5 +1,32 @@
 [
     {
+        "title": "S1. ¿Qué tiene que pasar para que vWeird-danix sea campeón?",
+        "description": "Necesita 18 puntos (P3). Si xxJoanxX05 corre, necesita una P6+FL si solo corre vWeird-danix.",
+        "category":"Formula1",
+        "date":"03/06/2024",
+        "author":"Admin",
+        "image":"../../attachments/news/fia.png",
+        "content": "Contenido de la noticia1"
+    },
+    {
+        "title": "S1. ¿Qué tiene que pasar para ser campeón Alexshaark11?",
+        "description": "Necesita 11 puntos (P5+FL). Si Alexshaark11 no puntúa, necesita que Dylanr8-.- no haga (P3+FL) o SergioGamir P1.",
+        "category":"Formula2",
+        "date":"03/06/2024",
+        "author":"Admin",
+        "image":"../../attachments/news/fia.png",
+        "content": "Contenido de la noticia1"
+    },
+    {
+        "title": "S1. Victoria de Anuel_doble_Z_93",
+        "description": "Completa el podio vWeird-danix y Serbalesa. Batalla a 4 por el mundial.",
+        "category":"Formula1",
+        "date":"30/05/2024",
+        "author":"Admin",
+        "image":"../../attachments/news/usa.png",
+        "content": "Contenido de la noticia1"
+    },
+    {
         "title": "S1. Carrerón de IRT miguelon que gana la carrera.",
         "description": "Completa el podio marcos_cbkp y Sergiogamir. Alexshaark11 se acerca al mundial.",
         "category":"Formula2",
