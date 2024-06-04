@@ -149,6 +149,7 @@ function show_data_driver(json,category) {
 
         document.getElementById(category+"-drivers-table").innerHTML += '<tr>'+
         '<td style="background-color:red;min-width:10rem;max-width:10rem;">'+json[index]["piloto"]+'</td>' +
+        '<td style="background-color: red;">'+json[index]["puntuacionTotal"]+'</td>'+
         '<td>'+json[index]["puntuaciones"][0]+'</td>'+
         '<td>'+json[index]["puntuaciones"][1]+'</td>'+
         '<td>'+json[index]["puntuaciones"][2]+'</td>'+
@@ -160,7 +161,6 @@ function show_data_driver(json,category) {
         '<td>'+json[index]["puntuaciones"][8]+'</td>'+
         '<td>'+json[index]["puntuaciones"][9]+'</td>'+
         '<td>-</td>'+
-        '<td style="background-color: red;">'+json[index]["puntuacionTotal"]+'</td>'+
       '</tr>'
     }    
 }
@@ -171,6 +171,7 @@ function show_data_team(json,category) {
         color_team = get_color_team(json[index]["equipo"])     
         document.getElementById(category+"-teams-table").innerHTML += '<tr>'+
         '<td style="background-color:'+color_team+';min-width:10rem;max-width:10rem;">'+json[index]["equipo"]+'</td>' +
+        '<td style="background-color: red;">'+json[index]["puntuacionTotal"]+'</td>'+
         '<td>'+json[index]["puntuaciones"][0]+'</td>'+
         '<td>'+json[index]["puntuaciones"][1]+'</td>'+
         '<td>'+json[index]["puntuaciones"][2]+'</td>'+
@@ -182,7 +183,6 @@ function show_data_team(json,category) {
         '<td>'+json[index]["puntuaciones"][8]+'</td>'+
         '<td>'+json[index]["puntuaciones"][9]+'</td>'+
         '<td>-</td>'+
-        '<td style="background-color: red;">'+json[index]["puntuacionTotal"]+'</td>'+
       '</tr>'
     }   
 }
