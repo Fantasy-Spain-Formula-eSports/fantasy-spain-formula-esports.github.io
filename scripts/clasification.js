@@ -182,7 +182,7 @@ function show_data_team(json,category) {
         '<td>'+json[index]["puntuaciones"][7]+'</td>'+
         '<td>'+json[index]["puntuaciones"][8]+'</td>'+
         '<td>'+json[index]["puntuaciones"][9]+'</td>'+
-        '<td>-</td>'+
+'<td>'+json[index]["puntuaciones"][10]+'</td>'+
       '</tr>'
     }   
 }
