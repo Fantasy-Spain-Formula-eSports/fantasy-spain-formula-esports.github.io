@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clasificación F1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            width: 100%;
+            max-width: 800px;
+        }
+        .text-area-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 32%;
+            min-width: 32%;
+        }
+        textarea {
+            width: 100%;
+            height: 350px;
+        }
+        .text-content {
+            width: 100%;
+            max-width: 800px;
+            text-align: left;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+        .copy-button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+        .copy-button:hover {
+            background-color: #45a049;
+        }
+        .copy-alert {
+            display: none;
+            color: #28a745;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        h3 {
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="text-area-group">
+            <h3>Clasificación Pilotos Actual</h3>
+            <textarea id="pilotosActual" placeholder="Introduce la clasificación de pilotos actual..."></textarea>
+        </div>
+        <div class="text-area-group">
+            <h3>Clasificación Equipos Actual</h3>
+            <textarea id="equiposActual" placeholder="Introduce la clasificación de equipos actual..."></textarea>
+        </div>
+        <div class="text-area-group">
+            <h3>Clasificación Última Carrera</h3>
+            <textarea id="ultimaCarrera" placeholder="Introduce los resultados de la última carrera..."></textarea>
+        </div>
+    </div>
+
+    <button class="copy-button" onclick="sumarResultados()">Actualizar Clasificación</button>
+    <span class="copy-alert" id="copyAlert">¡Clasificación actualizada!</span>
+    <br>
+    <button class="copy-button" onclick="copyText('DriversText')">Copiar Clasificación de Pilotos</button>
+    <span class="copy-alert" id="copyAlert-DriversText">¡Texto copiado!</span>
+    <br>
+    <div class="text-content" id="DriversText">
+        <!-- Aquí se mostrará la clasificación actualizada -->
+    </div>
+    <br>
+    <button class="copy-button" onclick="copyText('TeamsText')">Copiar Clasificación de Constructores</button>
+    <span class="copy-alert" id="copyAlert-TeamsText">¡Texto copiado!</span>
+    <br>
+    <div class="text-content" id="TeamsText">
+        <!-- Aquí se mostrará la clasificación actualizada -->
+    </div>
+
+    <script>
+        error = false
+        function parseClassificationDrivers(text) {
+            const lines = text.split('\n').slice(4);
+            const classification = {};
+            num= 1;
+            lines.forEach(line => {
+                try {
+                    const paragraph = line.split('>')[0]+'>'
+                    const titular = /^(\d+)\.\s([^\(]+)\((\d+)\).*<:(.*?):.*?>$/;
+                    const reserva = /^(\d+)\.\s([^\(]+)\((\d+)\).*([^\)]+)$/;
+                    const line_match = paragraph.match(titular);
+                    // console.info(paragraph)
+                    if (line_match) {
+                        const [, position, name, points, team] = line_match;
+                        classification[name.trim()] = {
+                            points: parseInt(points),
+                            team: team.trim()
+                        };
+                    }else{
+                        const [,position,name,points,team] = paragraph.match(reserva)
+                        classification[name.trim()] = {
+                            points: parseInt(points),
+                            team: team.trim()
+                        };
+                        console.info(team)
+                    }
+                    num++
+                } catch (error) {
+                    error = true
+                    document.getElementById("DriversText").innerHTML = "Error al introducir un piloto de la posición: "+num;
+                    console.info("Error al introducir un piloto de la posición: "+num)
+                }
+
+               
+            });
+
+            return classification;
+        }
+        
+        function parseClassificationTeams(text) {
+            num =1
+            const lines = text.split('\n').slice(4);
+            const classification = {};
+            try {
+                lines.forEach(line => {          
+                    const regex =/^(\d+)\.\s<:(.*?):\d+>\s(\d+)$/;
+                    const line_match = line.match(regex);
+                    if (line_match) {
+                        const [, position, team, points] = line_match;
+                        classification[team.trim()] = {
+                            points: parseInt(points)
+                        };
+                    }else{
+                        console.info(line)
+                    }
+                    num++
+                });
+
+            } catch (error) {
+                error =true
+                document.getElementById("TeamsText").innerHTML += "Error al introducir el equipo de la posición:"+num;
+                console.info("Error")
+            }
+            // console.table(classification)
+            return classification;
+        }
+
+        function parseRaceResults(text) {
+            const lines = text.split('\n').slice(4);
+            const results = [];
+            
+            lines.forEach(line => {
+                const paragraph = line.split('>')[0]+'>'
+                // console.info(paragraph)
+                const piloto = /^(\d+)\.\s([^\(]+)\((\d+)\).*<:(.*?):.*?>$/;
+                const line_match = paragraph.match(piloto);
+                if (line_match) {
+                    const [, position, name, points, team] = line_match;
+                    console.info(team)
+                    results.push({
+                        name:name.trim(),
+                        points: parseInt(points),
+                        team: team.trim()
+                    });
+                }
+            });
+            console.table(results)
+            return results;
+        }
+
+        function sumarResultados() {
+            const pilotosText = document.getElementById("pilotosActual").value;
+            const equiposText = document.getElementById("equiposActual").value;
+            const carreraText = document.getElementById("ultimaCarrera").value;
+
+            const pilotos = parseClassificationDrivers(pilotosText);
+            const equipos = parseClassificationTeams(equiposText);
+            const resultadosCarrera = parseRaceResults(carreraText);
+            console.table(resultadosCarrera)
+            // Actualiza la clasificación de pilotos            
+
+           resultadosCarrera.forEach(result => {
+                if (pilotos[result.name]) {
+                    console.info(pilotos[result.name].points,result.points)
+                    pilotos[result.name].points += result.points;
+                }
+            });
+
+            // Actualiza la clasificación de constructores
+            resultadosCarrera.forEach(result => {
+                const team = result.team;
+                if (equipos[team]) {
+                    equipos[team].points += result.points;
+                }
+            });
+            console.table(equipos)
+            console.table(pilotos)
+            // Muestra la clasificación actualizada
+            let nuevaClasificacionPilotos = "@everyone<br><br>"+carreraText.split('\n')[2]+"<br><br>";
+            Object.keys(pilotos).sort((a, b) => pilotos[b].points - pilotos[a].points).forEach((key, index) => {
+                nuevaClasificacionPilotos += `${index + 1}. ${key} (${pilotos[key].points})`;
+                if (pilotos[key].team == ">") {
+                    nuevaClasificacionPilotos +='*<br>';
+                } else {
+                    nuevaClasificacionPilotos +=`<:${pilotos[key].team}:><br>`;
+                }
+                
+            });
+
+            let nuevaClasificacionEquipos = "@everyone<br><br>"+carreraText.split('\n')[2]+"<br><br>";
+            Object.keys(equipos).sort((a, b) => equipos[b].points - equipos[a].points).forEach((key, index) => {
+                nuevaClasificacionEquipos += `${index + 1}. <:${key}:> ${equipos[key].points}<br>`;
+            });
+
+            // Coloca la nueva clasificación en el div
+            if (!error) {
+                document.getElementById("DriversText").innerHTML = nuevaClasificacionPilotos;
+                document.getElementById("TeamsText").innerHTML = nuevaClasificacionEquipos;
+                error = false
+            }
+
+            // Muestra el mensaje de confirmación
+            var alert = document.getElementById("copyAlert");
+            alert.style.display = "inline";
+            setTimeout(function () {
+                alert.style.display = "none";
+            }, 2000);
+        }
+        
+        function copyText(text) {
+            // Obtén el texto del div
+            var textToCopy = document.getElementById(text).innerText;
+
+            // Crea un textarea temporal para copiar el texto
+            var tempTextArea = document.createElement("textarea");
+            tempTextArea.value = textToCopy;
+            document.body.appendChild(tempTextArea);
+
+            // Selecciona y copia el texto
+            tempTextArea.select();
+            document.execCommand("copy");
+
+            // Elimina el textarea temporal
+            document.body.removeChild(tempTextArea);
+
+            // Muestra el mensaje de copiado
+            var alert = document.getElementById("copyAlert-"+text);
+            alert.style.display = "inline";
+
+            // Oculta el mensaje después de 2 segundos
+            setTimeout(function() {
+                alert.style.display = "none";
+            }, 2000);
+        }
+    </script>
+
+</body>
+</html>
