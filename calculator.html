@@ -43,19 +43,20 @@
         }
         .copy-button {
             padding: 10px 20px;
-            background-color: #4CAF50;
+            background-color: #ff1e00;
             color: white;
             border: none;
             cursor: pointer;
             font-size: 16px;
             margin-right: 10px;
+            border-radius: 2rem;
         }
         .copy-button:hover {
-            background-color: #45a049;
+            background-color: #ff9100;
         }
         .copy-alert {
             display: none;
-            color: #28a745;
+            color: #ffc400;
             font-size: 16px;
             margin-top: 10px;
         }
@@ -67,7 +68,7 @@
     </style>
 </head>
 <body>
-
+    <h1>Calculadora</h1>
     <div class="container">
         <div class="text-area-group">
             <h3>Clasificación Pilotos Actual</h3>
@@ -82,10 +83,9 @@
             <textarea id="ultimaCarrera" placeholder="Introduce los resultados de la última carrera..."></textarea>
         </div>
     </div>
-
     <button class="copy-button" onclick="sumarResultados()">Actualizar Clasificación</button>
     <span class="copy-alert" id="copyAlert">¡Clasificación actualizada!</span>
-    <br>
+    <hr>
     <button class="copy-button" onclick="copyText('DriversText')">Copiar Clasificación de Pilotos</button>
     <span class="copy-alert" id="copyAlert-DriversText">¡Texto copiado!</span>
     <br>
