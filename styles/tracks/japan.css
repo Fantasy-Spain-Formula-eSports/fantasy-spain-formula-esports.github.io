@@ -1,5 +1,5 @@
 .card#japan{
-    background-image: url("../../attachments/tracks/japon.png");
+    background-image: url("../../attachments/tracks/japan.png");
     z-index: 0;
 }
 .cardBox#japan::before{

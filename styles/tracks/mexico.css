@@ -1,0 +1,27 @@
+.card#mexico{
+    background-image: url("../../attachments/tracks/mexico.png");
+    z-index: 0;
+}
+.cardBox#mexico::before{
+    background: -webkit-linear-gradient(to right, red, white, green);
+    background: linear-gradient(to right,red,white,green);
+}
+.skill-per.rectas.mexico {
+    /*progreso de las diferentes lenguajes*/
+    width: 43%;
+  }
+  
+  .skill-per.lentas.mexico {
+    /*progreso de las diferentes lenguajes*/
+    width: 17%;
+  }
+  
+  .skill-per.medias.mexico {
+    /*progreso de las diferentes lenguajes*/
+    width: 50%;
+  }
+  
+  .skill-per.rapidas.mexico {
+    /*progreso de las diferentes lenguajes*/
+    width: 33%;
+  }

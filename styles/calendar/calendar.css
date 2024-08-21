@@ -1,6 +1,7 @@
 .cardBox {
   width: 250px;
   height: 300px;
+  margin: .3rem;
   position: relative;
   display: grid;
   place-items: center;
@@ -9,6 +10,22 @@
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 10px 0px,
     rgba(0, 0, 0, 0.5) 0px 2px 25px 0px;
   color: black;
+}
+.card#abu_dabi{
+  background-image: url(../../attachments/country/abu_dabi.png);
+}
+.card#arabia{
+  background-image: url(../../attachments/country/arabia.png);
+}
+.card#australia{
+  background-image: url(../../attachments/country/australia.png);
+}
+.card#austria{
+  background-image: url(../../attachments/country/austria.png);
+}
+.card#baku{
+  background-image: url(../../attachments/country/azerbaijan.png);
+  background-position: center;
 }
 .card#barcelona{
     background-image: url(../../attachments/country/spain.png);
@@ -20,36 +37,53 @@
     background-image: url(../../attachments/country/brasil.png);
     background-position: center;
 }
-.card#imola{
+.card#spa{
+  background-image: url(../../attachments/country/belgium.png);
+  background-position: center;
+  background-size: contain;
+}
+.card#canada{
+  background-image: url(../../attachments/country/canada.png);
+  background-position: center;
+}
+.card#hungary{
+  background-image: url(../../attachments/country/hungary.png);
+}
+.card#imola, .card#italia{
     background-image: url(../../attachments/country/italy.png);
     background-size: contain;
     background-position: center;
 }
-.card#baku{
-    background-image: url(../../attachments/country/azerbaijan.png);
-    background-position: center;
+.card#japan{
+  background-image: url(../../attachments/country/japan.png);
+  background-position: center;
+}
+.card#las_vegas, .card#usa, .card#miami{
+  background-image: url(../../attachments/country/usa.png);
+  background-position: top left;
+}
+.card#mexico{
+  background-image: url(../../attachments/country/mexico.png);
+  background-size: contain;
+  background-position: center;
+}
+.card#monaco{
+  background-image: url(../../attachments/country/monaco.png);
+}
+.card#netherlands{
+  background-image: url(../../attachments/country/netherlands.png);
 }
 .card#qatar{
     background-image: url(../../attachments/country/qatar.png);
 }
+.card#singapur{
+  background-image: url(../../attachments/country/singapore.png);
+}
+.card#united_kingdom{
+  background-image: url(../../attachments/country/united_kingdom.png);
+}
 
-.card#spa{
-    background-image: url(../../attachments/country/belgium.png);
-    background-position: center;
-    background-size: contain;
-}
-.card#canada{
-    background-image: url(../../attachments/country/canada.png);
-    background-position: center;
-}
-.card#las_vegas{
-    background-image: url(../../attachments/country/usa.png);
-    background-position: top left;
-}
-.card#japon{
-    background-image: url(../../attachments/country/japan.png);
-    background-position: center;
-}
+
 
 .card {
   position: absolute;

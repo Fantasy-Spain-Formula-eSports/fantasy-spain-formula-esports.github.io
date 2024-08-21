@@ -1,0 +1,27 @@
+.card#miami{
+    background-image: url("../../attachments/tracks/miami.png");
+    z-index: 0;
+}
+.cardBox#miami::before{
+    background: -webkit-linear-gradient(to right, blue, white, red);
+    background: linear-gradient(to right,blue, white, red);
+}
+.skill-per.rectas.miami {
+    /*progreso de las diferentes lenguajes*/
+    width: 43%;
+  }
+  
+  .skill-per.lentas.miami {
+    /*progreso de las diferentes lenguajes*/
+    width: 17%;
+  }
+  
+  .skill-per.medias.miami {
+    /*progreso de las diferentes lenguajes*/
+    width: 50%;
+  }
+  
+  .skill-per.rapidas.miami {
+    /*progreso de las diferentes lenguajes*/
+    width: 33%;
+  }

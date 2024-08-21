@@ -1,0 +1,27 @@
+.card#australia{
+    background-image: url("../../attachments/tracks/australia.png");
+    z-index: 0;
+}
+.cardBox#australia::before{
+    background: -webkit-linear-gradient(to right, blue, blue, red);
+    background: linear-gradient(to right,blue, blue, red);
+}
+.skill-per.rectas.australia {
+    /*progreso de las diferentes lenguajes*/
+    width: 43%;
+  }
+  
+  .skill-per.lentas.australia {
+    /*progreso de las diferentes lenguajes*/
+    width: 17%;
+  }
+  
+  .skill-per.medias.australia {
+    /*progreso de las diferentes lenguajes*/
+    width: 50%;
+  }
+  
+  .skill-per.rapidas.australia {
+    /*progreso de las diferentes lenguajes*/
+    width: 33%;
+  }

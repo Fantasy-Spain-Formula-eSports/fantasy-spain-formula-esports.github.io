@@ -1,0 +1,27 @@
+.card#usa{
+    background-image: url("../../attachments/tracks/usa.png");
+    z-index: 0;
+}
+.cardBox#usa::before{
+    background: -webkit-linear-gradient(to right, red, white, green);
+    background: linear-gradient(to right,red,white,green);
+}
+.skill-per.rectas.usa {
+    /*progreso de las diferentes lenguajes*/
+    width: 43%;
+  }
+  
+  .skill-per.lentas.usa {
+    /*progreso de las diferentes lenguajes*/
+    width: 17%;
+  }
+  
+  .skill-per.medias.usa {
+    /*progreso de las diferentes lenguajes*/
+    width: 50%;
+  }
+  
+  .skill-per.rapidas.usa {
+    /*progreso de las diferentes lenguajes*/
+    width: 33%;
+  }

@@ -3,8 +3,8 @@
     z-index: 0;
 }
 .cardBox#barcelona::before{
-    background: -webkit-linear-gradient(to right, red, yellow, red);
-    background: linear-gradient(to right,red,yellow,red);
+    background: -webkit-linear-gradient(to right, red, yellow,yellow, red);
+    background: linear-gradient(to right,red,yellow,yellow,red);
 }
 .skill-per.rectas.barcelona {
     /*progreso de las diferentes lenguajes*/

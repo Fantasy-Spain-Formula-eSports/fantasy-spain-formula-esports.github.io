@@ -1,0 +1,27 @@
+.card#netherlands{
+    background-image: url("../../attachments/tracks/netherlands.png");
+    z-index: 0;
+}
+.cardBox#netherlands::before{
+    background: -webkit-linear-gradient(to right, red, white, green);
+    background: linear-gradient(to right,red,white,green);
+}
+.skill-per.rectas.netherlands {
+    /*progreso de las diferentes lenguajes*/
+    width: 43%;
+  }
+  
+  .skill-per.lentas.netherlands {
+    /*progreso de las diferentes lenguajes*/
+    width: 17%;
+  }
+  
+  .skill-per.medias.netherlands {
+    /*progreso de las diferentes lenguajes*/
+    width: 50%;
+  }
+  
+  .skill-per.rapidas.netherlands {
+    /*progreso de las diferentes lenguajes*/
+    width: 33%;
+  }

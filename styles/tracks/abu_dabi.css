@@ -1,0 +1,27 @@
+.card#abu_dabi{
+    background-image: url("../../attachments/tracks/abu_dabi.png");
+    z-index: 0;
+}
+.cardBox#abu_dabi::before{
+    background: -webkit-linear-gradient(to right,black,white,red, green);
+    background: linear-gradient(to right,green,red,white,black);
+}
+.skill-per.rectas.abu_dabi {
+    /*progreso de las diferentes lenguajes*/
+    width: 43%;
+  }
+  
+  .skill-per.lentas.abu_dabi {
+    /*progreso de las diferentes lenguajes*/
+    width: 17%;
+  }
+  
+  .skill-per.medias.abu_dabi {
+    /*progreso de las diferentes lenguajes*/
+    width: 50%;
+  }
+  
+  .skill-per.rapidas.abu_dabi {
+    /*progreso de las diferentes lenguajes*/
+    width: 33%;
+  }

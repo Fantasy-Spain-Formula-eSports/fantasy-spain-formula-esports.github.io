@@ -1,0 +1,27 @@
+.card#arabia{
+    background-image: url("../../attachments/tracks/arabia.png");
+    z-index: 0;
+}
+.cardBox#arabia::before{
+    background: -webkit-linear-gradient(to right, green, white, green);
+    background: linear-gradient(to right,green,white,green);
+}
+.skill-per.rectas.arabia {
+    /*progreso de las diferentes lenguajes*/
+    width: 43%;
+  }
+  
+  .skill-per.lentas.arabia {
+    /*progreso de las diferentes lenguajes*/
+    width: 17%;
+  }
+  
+  .skill-per.medias.arabia {
+    /*progreso de las diferentes lenguajes*/
+    width: 50%;
+  }
+  
+  .skill-per.rapidas.arabia {
+    /*progreso de las diferentes lenguajes*/
+    width: 33%;
+  }

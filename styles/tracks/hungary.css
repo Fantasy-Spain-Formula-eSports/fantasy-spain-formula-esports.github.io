@@ -1,0 +1,27 @@
+.card#hungary{
+    background-image: url("../../attachments/tracks/hungary.png");
+    z-index: 0;
+}
+.cardBox#hungary::before{
+    background: -webkit-linear-gradient(to right, red, white, green);
+    background: linear-gradient(to right,red,white,green);
+}
+.skill-per.rectas.hungary {
+    /*progreso de las diferentes lenguajes*/
+    width: 43%;
+  }
+  
+  .skill-per.lentas.hungary {
+    /*progreso de las diferentes lenguajes*/
+    width: 17%;
+  }
+  
+  .skill-per.medias.hungary {
+    /*progreso de las diferentes lenguajes*/
+    width: 50%;
+  }
+  
+  .skill-per.rapidas.hungary {
+    /*progreso de las diferentes lenguajes*/
+    width: 33%;
+  }
