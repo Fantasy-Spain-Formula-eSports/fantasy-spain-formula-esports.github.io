@@ -125,18 +125,18 @@
                             points: parseInt(points),
                             team: team.trim()
                         };
-                        console.info(team)
+                        // //console.info(team)
                     }
                     num++
                 } catch (error) {
                     error = true
                     document.getElementById("DriversText").innerHTML = "Error al introducir un piloto de la posición: "+num;
-                    console.info("Error al introducir un piloto de la posición: "+num)
+                    //console.info("Error al introducir un piloto de la posición: "+num)
                 }
 
                
             });
-
+            //console.table(classification)
             return classification;
         }
         
@@ -145,6 +145,7 @@
             const lines = text.split('\n').slice(4);
             const classification = {};
             try {
+                //console.table(lines)
                 lines.forEach(line => {          
                     const regex =/^(\d+)\.\s<:(.*?):\d+>\s(\d+)$/;
                     const line_match = line.match(regex);
@@ -154,7 +155,43 @@
                             points: parseInt(points)
                         };
                     }else{
-                        console.info(line)
+                        const new_regex = /^(\d+)\.\s(\d+)<:(.*?):\d+>$/;
+                        const line_match = line.match(new_regex);
+                        if (line_match) {
+                            const [, position, points,team] = line_match;
+                            classification[team.trim()] = {
+                                points: parseInt(points)
+                            };
+                        } else {
+                            const new_regex = /^(\d+)\.\s(\d+)<:(.*?):\d+>\s$/; // Un espacio extra
+                            const line_match = line.match(new_regex);
+                            if (line_match) {
+                                const [, position,points, team] = line_match;
+                                classification[team.trim()] = {
+                                points: parseInt(points)
+                            };
+                            } else {
+                                const new_regex = /^(\d+)\.\s(\d+)<:(.*?):\d+>\s\s$/; // Dos espacio extra
+                                const line_match = line.match(new_regex);
+                                if (line_match) {
+                                    const [, position,points, team] = line_match;
+                                    classification[team.trim()] = {
+                                    points: parseInt(points)
+                                };
+                                } else {
+                                    const new_regex = /^(\d+)\.\s(\d+)\s<:(.*?):\d+>\s*$/; // Dos espacio extra y un espacio antes del logo
+                                    const line_match = line.match(new_regex);
+                                    if (line_match) {
+                                        const [, position,points, team] = line_match;
+                                        classification[team.trim()] = {
+                                        points: parseInt(points)
+                                        };
+                                    }else{
+                                        //console.info("Posible error")
+                                    }
+                                }  
+                            }                            
+                        }
                     }
                     num++
                 });
@@ -162,7 +199,7 @@
             } catch (error) {
                 error =true
                 document.getElementById("TeamsText").innerHTML += "Error al introducir el equipo de la posición:"+num;
-                console.info("Error")
+                //console.info("Error")
             }
             // console.table(classification)
             return classification;
@@ -171,20 +208,38 @@
         function parseRaceResults(text) {
             const lines = text.split('\n').slice(4);
             const results = [];
-            
+            console.table(lines)
             lines.forEach(line => {
                 const paragraph = line.split('>')[0]+'>'
-                // console.info(paragraph)
+                console.info(paragraph)
                 const piloto = /^(\d+)\.\s([^\(]+)\((\d+)\).*<:(.*?):.*?>$/;
                 const line_match = paragraph.match(piloto);
+                console.info(line, "-", line_match)
                 if (line_match) {
                     const [, position, name, points, team] = line_match;
-                    console.info(team)
+                    //console.info(team)
                     results.push({
                         name:name.trim(),
                         points: parseInt(points),
                         team: team.trim()
                     });
+                }else{
+                    const piloto = /^(\d+)\.\s*([^\(]+)\s*\((\d+)\)<:(.*?):\d+>\s*$/;
+                    const line_match = paragraph.match(piloto);
+                    console.info(line, "-", line_match)
+                    if (line_match) {
+                        const [, position, name, points, team] = line_match;
+                        //console.info(team)
+                        results.push({
+                            name:name.trim(),
+                            points: parseInt(points),
+                            team: team.trim()
+                        });
+
+                    }else{
+                        console.info("Error")
+                        // error = true
+                    }
                 }
             });
             console.table(results)
@@ -196,16 +251,24 @@
             const equiposText = document.getElementById("equiposActual").value;
             const carreraText = document.getElementById("ultimaCarrera").value;
 
-            const pilotos = parseClassificationDrivers(pilotosText);
+            var pilotos = parseClassificationDrivers(pilotosText);
             const equipos = parseClassificationTeams(equiposText);
             const resultadosCarrera = parseRaceResults(carreraText);
-            console.table(resultadosCarrera)
+            //console.info("Resultados de la Carrera")
+            //console.table(resultadosCarrera)
             // Actualiza la clasificación de pilotos            
 
            resultadosCarrera.forEach(result => {
+                console.info("Está el piloto?",result.name, pilotos[result.name])
                 if (pilotos[result.name]) {
-                    console.info(pilotos[result.name].points,result.points)
+                    //console.info(pilotos[result.name].points,result.points)
                     pilotos[result.name].points += result.points;
+                }else{
+                    pilotos[result.name] = {
+                            points: parseInt(result.points),
+                            team: result.team.trim()
+                        };
+                    console.table(pilotos)
                 }
             });
 
@@ -216,8 +279,8 @@
                     equipos[team].points += result.points;
                 }
             });
-            console.table(equipos)
-            console.table(pilotos)
+            //console.table(equipos)
+            //console.table(pilotos)
             // Muestra la clasificación actualizada
             let nuevaClasificacionPilotos = "@everyone<br><br>"+carreraText.split('\n')[2]+"<br><br>";
             Object.keys(pilotos).sort((a, b) => pilotos[b].points - pilotos[a].points).forEach((key, index) => {
