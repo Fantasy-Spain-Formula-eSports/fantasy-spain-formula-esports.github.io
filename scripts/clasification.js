@@ -137,6 +137,7 @@ function get_color_team(team) {
         default:  // Por si acaso, que no pasará nunca
             color = "blue;";
             console.info("Por qué??")
+            console.info(team)
     }
     return color;
 
