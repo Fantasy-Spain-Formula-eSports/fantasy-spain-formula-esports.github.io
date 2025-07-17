@@ -122,14 +122,14 @@ function get_color_team(team) {
         case "Alpine":
             color = "#0044ff";
             break;
-        case "Alfa Romeo":
-            color = "#A42134";
+        case "RB Visa Cash":
+            color = "#001affff";
             break;
         case "Williams Racing":
             color = "#00A0DE";
             break;
-        case "AlphaTauri":
-            color = "#20394C";
+        case "Kick Sauber":
+            color = "#00ff2aff";
             break;
         case "Haas":
             color = "white; color:black";
