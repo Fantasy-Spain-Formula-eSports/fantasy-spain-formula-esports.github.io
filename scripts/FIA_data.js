@@ -1,7 +1,7 @@
 let formula1Drivers = [];
 let formula2Drivers = [];
 let recentPenaltiesDescriptions = [];
-const MAX_FIA_POINTS = 12;
+const MAX_FIA_POINTS = 8;
 const TIME_DURATION_PENALTIES = 10;
 
 // Obtener la fecha actual
