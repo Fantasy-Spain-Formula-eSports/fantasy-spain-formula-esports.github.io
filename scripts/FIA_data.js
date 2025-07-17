@@ -57,9 +57,9 @@ fetch('../data/super_license_points.json') //Petición GET para cargar el archiv
         };
     
         // Clasificar al piloto según su categoría
-        if (driver.category === "Formula1") {
+        if (driver.category === "DIV1") {
             formula1Drivers.push(driverInfo);
-        } else if (driver.category === "Formula2") {
+        } else if (driver.category === "DIV2") {
             formula2Drivers.push(driverInfo);
         }
     });

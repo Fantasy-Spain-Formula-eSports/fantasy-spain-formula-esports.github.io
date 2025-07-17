@@ -1,22 +1,22 @@
 [
     {
-        "gp_name": "Gran Premio de Bahréin",
-        "track_name": "Circuito Internacional de Bahréin",
+        "gp_name": "Gran Premio de Baréin",
+        "track_name": "Circuito Internacional de Baréin",
         "id_card": "barein",
         "straights": "51%",
         "false_turn":"13%","slow_turns": "20%",
         "medium_turns": "53%",
         "fast_turns": "13%",
-        "boxText": "• El circuito de Barein alberga el Gran Premio Barein. Con su diseño moderno y amplias rectas, el circuito de Bahréin desafía la capacidad de los equipos para encontrar el equilibrio perfecto entre velocidad y gestión de neumáticos, ofreciendo emocionantes batallas en cada sector y espectaculares carreras nocturnas bajo las luces.",
-        "calendar_date": "2023-03-05",
+        "boxText": "• Este circuito ubicado en medio del desierto de Sakhir alberga la carrera del gran premio de Barein. Con su diseño moderno y amplias rectas, el circuito de Baréin desafía la capacidad de los equipos para encontrar el equilibrio perfecto entre velocidad y gestión de neumáticos, ofreciendo emocionantes batallas en cada sector y espectaculares carreras nocturnas bajo las luces. Su primera carrera fue en 2004, siendo ganada por el Kaiser Micahel Schumacher. Es uno de los circuitos con mayor degradación del calendario, lo que hace que la estrategia sea importante el domingo. ",
+        "calendar_date": "2025-07-19",
         "img_country": "barein",
-        "img_track": "bahrain",
+        "img_track": "barein",
         "fastest_lap": "1:31.447",
         "fastest_lap_driver": "Pedro Martínez de la Rosa",
         "track_length_km": "5.412",
         "last_5_winners": ["Max Verstappen", "Lewis Hamilton", "Lewis Hamilton", "Charles Leclerc", "Sebastian Vettel"],
         "last_5_poles": ["Charles Leclerc", "Max Verstappen", "Lewis Hamilton", "Charles Leclerc", "Sebastian Vettel"],
-        "fecha": ""
+        "fecha": "2025-07-19T11:00:00Z"
     },
     {
         "gp_name": "Gran Premio de Arabia Saudí",
@@ -46,7 +46,7 @@
         "medium_turns": "50%",
         "fast_turns": "29%",
         "boxText": "• Ubicado en Melbourne, este circuito urbano ofrece una combinación de rectas rápidas y curvas técnicas.",
-        "calendar_date": "2023-04-02",
+        "calendar_date": "2025-07-19",
         "img_country": "australia",
         "img_track": "australia",
         "fastest_lap": "1:20.260",
@@ -54,7 +54,7 @@
         "track_length_km": "5.303",
         "last_5_winners": ["Charles Leclerc", "Lewis Hamilton", "Sebastian Vettel", "Sebastian Vettel", "Lewis Hamilton"],
         "last_5_poles": ["Charles Leclerc", "Lewis Hamilton", "Lewis Hamilton", "Sebastian Vettel", "Lewis Hamilton"],
-        "fecha": ""
+        "fecha": "2025-08-02T11:00:00Z"
     },
     {
         "gp_name": "Gran Premio de Mónaco",
@@ -83,8 +83,8 @@
         "false_turn":"16%","slow_turns": "26%",
         "medium_turns": "37%",
         "fast_turns": "21%",
-        "boxText": "• Este circuito nuevo y emocionante se desarrolla en las calles de Miami, con un diseño que busca desafiar a los pilotos con una combinación de velocidad y técnica.",
-        "calendar_date": "2023-05-07",
+        "boxText": "• Este circuito nuevo y emocionante se desarrolla en las calles de Miami, alrededor del Hard Rock Stadium. Combina largas rectas y curvas técnicas, con una sección estrecha tipo chicane. Inaugurado en 2022, destaca por su ambiente festivo y donde los famosos no faltan a su cita, además destca por su 'falso puerto', siendo esta una decoración con yates sobre una plataforma pintada.",
+        "calendar_date": "2025-09-06",
         "img_country": "miami",
         "img_track": "usa",
         "fastest_lap": "1:13.078",
@@ -92,7 +92,7 @@
         "track_length_km": "4.361",
         "last_5_winners": ["Max Verstappen", "Lewis Hamilton", "Lewis Hamilton", "Sebastian Vettel", "Lewis Hamilton"],
         "last_5_poles": ["Max Verstappen", "Lewis Hamilton", "Lewis Hamilton", "Sebastian Vettel", "Lewis Hamilton"],
-        "fecha": ""
+        "fecha": "2025-09-06T11:00:00:00Z"
     },
     {
         "gp_name": "Gran Premio de Emilia-Romaña",
@@ -102,8 +102,8 @@
         "false_turn":"37%","slow_turns": "16%",
         "medium_turns": "37%",
         "fast_turns": "11%",
-        "boxText": "• El circuito de Imola alberga el Gran Premio de la Emilia Romaña. Con curvas rápidas y un trazado histórico, Imola desafía a los pilotos con su naturaleza técnica y su escasa zona de escape, exigiendo precisión y valentía en cada vuelta.",
-        "calendar_date": "2023-05-21",
+        "boxText": "• El circuito de Imola alberga el Gran Premio de la Emilia Romaña. Con curvas rápidas y un trazado histórico, Imola desafía a los pilotos con su naturaleza técnica y su escasa zona de escape, exigiendo precisión y valentía en cada vuelta. Antiguamente llamado San Marino, fue sede de momentos legendarios y trágicos, como los accidentes de Senna y Ratzenberger en 1994. Circuito además conocido por su dificultad para adelantar, lo que históricamente han provocado luchas como la de Michael Schumacher y Fernando Alonso en 2005 y 2006.",
+        "calendar_date": "2025-09-06",
         "img_country": "imola",
         "img_track": "italy",
         "fastest_lap": "1:13.078",
@@ -111,7 +111,7 @@
         "track_length_km": "4.361",
         "last_5_winners": ["Max Verstappen", "Lewis Hamilton", "Lewis Hamilton", "Sebastian Vettel", "Lewis Hamilton"],
         "last_5_poles": ["Max Verstappen", "Lewis Hamilton", "Lewis Hamilton", "Sebastian Vettel", "Lewis Hamilton"],
-        "fecha": ""
+        "fecha": "2025-08-30T11:00:00Z"
     },
     {
         "gp_name": "Gran Premio de Azerbaijan",
@@ -121,8 +121,8 @@
         "false_turn":"25%","slow_turns": "30%",
         "medium_turns": "30%",
         "fast_turns": "15%",
-        "boxText": "• Con su impresionante combinación de secciones rápidas y estrechas, el circuito urbano de Bakú es un circuito impredecible que recompensa la valentía y castiga los errores, ofreciendo emoción y drama en cada carrera.",
-        "calendar_date": "2023-06-18",
+        "boxText": "• Con su impresionante combinación de secciones rápidas y estrechas, el circuito urbano de Bakú es un circuito impredecible que recompensa la valentía y castiga los errores. Destaca por sus grandes contrastes puesto que además de tener la recta más larga del calendario, dispone de la zona más estrecha también del mismo.",
+        "calendar_date": "2025-08-09",
         "img_country": "baku",
         "img_track": "baku",
         "fastest_lap": "1:13.078",
@@ -130,7 +130,7 @@
         "track_length_km": "4.361",
         "last_5_winners": ["Max Verstappen", "Lewis Hamilton", "Lewis Hamilton", "Sebastian Vettel", "Lewis Hamilton"],
         "last_5_poles": ["Max Verstappen", "Lewis Hamilton", "Lewis Hamilton", "Sebastian Vettel", "Lewis Hamilton"],
-        "fecha": ""
+        "fecha": "2025-08-09T11:00:00Z"
     },
     {
         "gp_name": "Gran Premio de China",
@@ -187,7 +187,7 @@
         "track_length_km": "4.361",
         "last_5_winners": ["Max Verstappen", "Lewis Hamilton", "Lewis Hamilton", "Sebastian Vettel", "Lewis Hamilton"],
         "last_5_poles": ["Max Verstappen", "Lewis Hamilton", "Lewis Hamilton", "Sebastian Vettel", "Lewis Hamilton"],
-        "fecha": "2026-11-18T22:00:00Z"
+        "fecha": ""
     },
     {
         "gp_name": "Gran Premio de Austria",
@@ -216,8 +216,8 @@
         "false_turn":"17%","slow_turns": "11%",
         "medium_turns": "39%",
         "fast_turns": "33%",
-        "boxText": "• Conocido por sus curvas rápidas y fluyentes, Silverstone es uno de los circuitos más históricos de la F1.",
-        "calendar_date": "2023-07-09",
+        "boxText": "• El Gran Premio de Silverstone se disputa en uno de los circuitos más icónicos y antiguos de la F1. Es rápido, fluido y famoso por curvas como Maggotts, Becketts y Copse. Fue sede del primer GP de la historia en 1950. Su clima impredecible y afición apasionada lo hacen especial.",
+        "calendar_date": "2025-09-27",
         "img_country": "united_kingdom",
         "img_track": "united_kingdom",
         "fastest_lap": "1:27.097",
@@ -225,7 +225,7 @@
         "track_length_km": "5.891",
         "last_5_winners": ["Lewis Hamilton", "Lewis Hamilton", "Max Verstappen", "Lewis Hamilton", "Sebastian Vettel"],
         "last_5_poles": ["Carlos Sainz", "Lewis Hamilton", "Max Verstappen", "Lewis Hamilton", "Sebastian Vettel"],
-        "fecha": ""
+        "fecha": "2025-09-27T11:00:00Z"
     },
     {
         "gp_name": "Gran Premio de Hungría",
@@ -235,8 +235,8 @@
         "false_turn":"0%","slow_turns": "29%",
         "medium_turns": "43%",
         "fast_turns": "29%",
-        "boxText": "• Este circuito es conocido por su naturaleza revirada y técnica, siendo comparado a menudo con un circuito urbano permanente.",
-        "calendar_date": "2023-07-23",
+        "boxText": "• El Gran Premio de Hungría, el último de esta temporada 5 de la F1 Tournament, se corre en el Hungaroring, un circuito estrecho y revirado, comparado a menudo con un kartódromo. Es difícil adelantar, por lo que la clasificación es clave. Se celebra desde 1986 y fue la primera carrera de F1 en un país del bloque del Este.",
+        "calendar_date": "2025-10-04",
         "img_country": "hungary",
         "img_track": "hungary",
         "fastest_lap": "1:16.627",
@@ -244,7 +244,7 @@
         "track_length_km": "4.381",
         "last_5_winners": ["Max Verstappen", "Lewis Hamilton", "Esteban Ocon", "Lewis Hamilton", "Lewis Hamilton"],
         "last_5_poles": ["Max Verstappen", "Lewis Hamilton", "Lewis Hamilton", "Valtteri Bottas", "Lewis Hamilton"],
-        "fecha": ""
+        "fecha": "2025-10-04T11:00:00Z"
     },
     {
         "gp_name": "Gran Premio de Bélgica",
@@ -255,15 +255,15 @@
         "medium_turns": "37%",
         "fast_turns": "42%",
         "boxText": "• Aquí se corre el Gran Premio de Bélgica que con su combinación única de curvas rápidas y cambios de elevación, Spa-Francorchamps es un circuito legendario que desafía a los pilotos con su naturaleza técnica y su exigente trazado de alta velocidad, ofreciendo emoción y espectáculo en cada vuelta.",
-        "calendar_date": "2023-07-30",
+        "calendar_date": "2025-07-26",
         "img_country": "spa",
-        "img_track": "belgium",
+        "img_track": "spa",
         "fastest_lap": "1:46.286",
         "fastest_lap_driver": "Valtteri Bottas",
         "track_length_km": "7.004",
         "last_5_winners": ["Max Verstappen", "Max Verstappen", "Lewis Hamilton", "Charles Leclerc", "Sebastian Vettel"],
         "last_5_poles": ["Carlos Sainz", "Max Verstappen", "Lewis Hamilton", "Charles Leclerc", "Sebastian Vettel"],
-        "fecha": ""
+        "fecha": "2025-07-26T11:00:00Z"
     },
     {
         "gp_name": "Gran Premio de Países Bajos",
@@ -273,8 +273,8 @@
         "false_turn":"7%","slow_turns": "14%",
         "medium_turns": "43%",
         "fast_turns": "36%",
-        "boxText": "•  Conocido por su paisaje costero y curvas desafiantes, el circuito ofrece una experiencia única tanto para pilotos como para espectadores. La carrera no solo destaca por su ubicación pintoresca, sino también por su exigente diseño que pone a prueba las habilidades de los mejores pilotos del mundo. Los fanáticos disfrutan de una atmósfera vibrante y vistas espectaculares, haciendo del Gran Premio de Zandvoort un evento inolvidable en el calendario de la Fórmula 1.",
-        "calendar_date": "2023-07-30",
+        "boxText": "•  Conocido por su paisaje costero y curvas desafiantes, el circuito ofrece una experiencia única tanto para pilotos como para espectadores, puesto que es el primer circuito que se correrá con el trazado invertido de la historia de la Tournament. La carrera no solo destaca por su ubicación pintoresca, sino también por su exigente diseño que pone a prueba las habilidades de los mejores pilotos del mundo. Los fanáticos disfrutan de una atmósfera vibrante y vistas espectaculares, haciendo del Gran Premio de Zandvoort un evento inolvidable en el calendario de la Fórmula 1.",
+        "calendar_date": "2025-09-20",
         "img_country": "netherlands",
         "img_track": "netherlands",
         "fastest_lap": "1:46.286",
@@ -282,7 +282,7 @@
         "track_length_km": "7.004",
         "last_5_winners": ["Max Verstappen", "Max Verstappen", "Lewis Hamilton", "Charles Leclerc", "Sebastian Vettel"],
         "last_5_poles": ["Carlos Sainz", "Max Verstappen", "Lewis Hamilton", "Charles Leclerc", "Sebastian Vettel"],
-        "fecha": "2024-08-10T11:00:00Z"
+        "fecha": "2025-09-20T11:00:00Z"
     },
     {
         "gp_name": "Gran Premio de Italia",
@@ -301,7 +301,7 @@
         "track_length_km": "5.793",
         "last_5_winners": ["Max Verstappen", "Daniel Ricciardo", "Pierre Gasly", "Charles Leclerc", "Lewis Hamilton"],
         "last_5_poles": ["Max Verstappen", "Max Verstappen", "Charles Leclerc", "Charles Leclerc", "Lewis Hamilton"],
-        "fecha": "2024-08-11T11:00:00Z"
+        "fecha": ""
     },
     {
         "gp_name": "Gran Premio de Singapur",
@@ -330,8 +330,8 @@
         "false_turn":"6%","slow_turns": "17%",
         "medium_turns": "50%",
         "fast_turns": "28%",
-        "boxText": "• Circuito donde se celebra el famoso Gran Premio de Japón y donde se cierra esta temporada. Con su diseño técnico y exigente, el circuito de Suzuka desafía la habilidad de los pilotos con su famosa serie de curvas en 'S' y cambios de elevación, ofreciendo emoción y desafío en cada vuelta. Su combinación de secciones rápidas y técnicas lo convierte en un favorito entre los aficionados y pilotos por igual, con momentos memorables que destacan en la historia de la Fórmula 1.",
-        "calendar_date": "2023-09-24",
+        "boxText": "• Circuito donde se celebra el famoso Gran Premio de Japón. Con su diseño técnico y exigente, el circuito de Suzuka desafía la habilidad de los pilotos con su famosa serie de curvas en 'S' y cambios de elevación, ofreciendo emoción y desafío en cada vuelta. Su combinación de secciones rápidas y técnicas lo convierte en un favorito entre los aficionados y pilotos por igual, con momentos memorables que destacan en la historia de la Fórmula 1.",
+        "calendar_date": "2025-08-23",
         "img_country": "japan",
         "img_track": "japan",
         "fastest_lap": "1:30.983",
@@ -339,7 +339,7 @@
         "track_length_km": "5.807",
         "last_5_winners": ["Max Verstappen", "Valtteri Bottas", "Lewis Hamilton", "Lewis Hamilton", "Sebastian Vettel"],
         "last_5_poles": ["Max Verstappen", "Sebastian Vettel", "Lewis Hamilton", "Lewis Hamilton", "Sebastian Vettel"],
-        "fecha": ""
+        "fecha": "2025-08-23T11:00:00Z"
     },
     {
         "gp_name": "Gran Premio de Catar",
@@ -406,8 +406,8 @@
         "false_turn":"20%","slow_turns": "13%",
         "medium_turns": "33%",
         "fast_turns": "33%",
-        "boxText": "• El circuito de Interlagos alberga el Gran Premio Brasil. Con su topografía única y cambios de elevación, Interlagos es un desafío tanto para pilotos como para ingenieros, ofreciendo emocionantes batallas y oportunidades de adelantamiento en cada curva.",
-        "calendar_date": "2023-11-05",
+        "boxText": "• El circuito de Interlagos alberga el Gran Premio Brasil. Con su topografía única y cambios de elevación, Interlagos es un desafío tanto para pilotos como para ingenieros, ofreciendo emocionantes batallas y oportunidades de adelantamiento en cada curva. Históricamente ha cerrado calendarios pero este año la emoción la dará a mitad de calendario",
+        "calendar_date": "2025-08-16",
         "img_country": "brasil",
         "img_track": "brasil",
         "fastest_lap": "1:10.540",
@@ -415,7 +415,7 @@
         "track_length_km": "4.309",
         "last_5_winners": ["George Russell", "Lewis Hamilton", "Max Verstappen", "Lewis Hamilton", "Sebastian Vettel"],
         "last_5_poles": ["Kevin Magnussen", "Lewis Hamilton", "Max Verstappen", "Lewis Hamilton", "Valtteri Bottas"],
-        "fecha": ""
+        "fecha": "2025-08-16T11:00:00Z"
     },
     {
         "gp_name": "Gran Premio de Las Vegas",
@@ -434,7 +434,7 @@
         "track_length_km": "6.120",
         "last_5_winners": [],
         "last_5_poles": [],
-        "fecha": "2024-11-18T22:00:00Z"
+        "fecha": ""
     },
     {
         "gp_name": "Gran Premio de Abu Dabi",
@@ -444,8 +444,8 @@
         "false_turn":"6%","slow_turns": "19%",
         "medium_turns": "38%",
         "fast_turns": "38%",
-        "boxText": "• Este circuito introducido a principios del siglo XXI, promete siempre un espectáculo siendo el sitio donde grandes pilotos se han coronado como campeones del mundo.",
-        "calendar_date": " 2023-11-18",
+        "boxText": "• El Gran Premio de Abu Dabi se disputa en el Circuito Yas Marina, famoso por su espectacular entorno y la puesta de sol durante la carrera. Es el único GP que comienza de día y termina de noche. Inaugurado en 2009, suele cerrar la temporada y destaca por su lujosa infraestructura.",
+        "calendar_date": " 2025-09-13",
         "img_country": "abu_dabi",
         "img_track": "abu_dabi",
         "fastest_lap": "",
@@ -453,6 +453,6 @@
         "track_length_km": "6.120",
         "last_5_winners": [],
         "last_5_poles": [],
-        "fecha": "2025-11-18T22:00:00Z"
+        "fecha": "2025-09-13T11:00:00Z"
     }
 ]

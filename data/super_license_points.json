@@ -1,327 +1,247 @@
 [
     {
-        "driver_name": "[VFT] Pablo Gutiérrez",
-        "category": "Formula1",
-        "penalties": [
-
-        ]
+        "driver_name": "Lamasss4v",
+        "category": "DIV1",
+        "penalties": []
     },
     {
-        "driver_name": "vWeird-danix",
-        "category": "Formula1",
-        "penalties": [
-
-        ]
+        "driver_name": "Alex Ruiz",
+        "category": "DIV1",
+        "penalties": []
     },
     {
-        "driver_name": "xxJoanxX05",
-        "category": "Formula1",
-        "penalties": [
-
-        ]
+        "driver_name": "ESPL_Kratos",
+        "category": "DIV1",
+        "penalties": []
     },
     {
-        "driver_name": "JBD_IsiRobles24",
-        "category": "Formula1",
-        "penalties": [
-        ]
+        "driver_name": "Abdullah Boulaich",
+        "category": "DIV1",
+        "penalties": []
     },
     {
-        "driver_name": "Keko Ñete",
-        "category": "Formula1",
-        "penalties": [
-        ]
+        "driver_name": "[ONB] Gica",
+        "category": "DIV1",
+        "penalties": []
     },
     {
-        "driver_name": "ManuelGS-97",
-        "category": "Formula1",
-        "penalties": [
-
-        ]
+        "driver_name": "Sergio Piñero",
+        "category": "DIV2",
+        "penalties": []
     },
     {
-        "driver_name": "Xavi2197",
-        "category": "Formula1",
-        "penalties": [
-
-        ]
+        "driver_name": "Malex",
+        "category": "DIV1",
+        "penalties": []
     },
     {
-        "driver_name": "polpras-06",
-        "category": "Formula1",
-        "penalties": [
-            {
-                "penalty_points": 2,
-                "penalty_date": "2024-05-16",
-                "description": "Entrar pasado en la curva 1 provocando una colisión. Vuelta 5."
-            },
-            {
-                "penalty_points": 10,
-                "penalty_date": "2024-05-16",
-                "description": "Provocar una colisión peligrosa y de manera deliberada evitando frenar en la curva 7. Vuelta 5."
-            },
-            {
-                "penalty_points": 2,
-                "penalty_date": "2024-05-16",
-                "description": "Expulsar a un piloto fuera de la pista de manera deliberada. Vuelta 5."
-            }
-        ]
+        "driver_name": "Aitor",
+        "category": "DIV1",
+        "penalties": []
     },
     {
-        "driver_name": "Salla33",
-        "category": "Formula1",
-        "penalties": [
-
-        ]
+        "driver_name": "Alex Limorte",
+        "category": "DIV2",
+        "penalties": []
     },
     {
-        "driver_name": "ALN_IscoGR-07",
-        "category": "Formula1",
-        "penalties": [
-
-        ]
+        "driver_name": "[ONB] RMgamerHD",
+        "category": "DIV1",
+        "penalties": []
     },
     {
-        "driver_name": "ARGOTE_80",
-        "category": "Formula1",
-        "penalties": [
-
-        ]
+        "driver_name": "[ONB] Alfons Gómez",
+        "category": "DIV1",
+        "penalties": []
     },
     {
-        "driver_name": "pichi1994RMCF",
-        "category": "Formula1",
-        "penalties": [
-
-        ]
+        "driver_name": "ESPL KIKE",
+        "category": "DIV1",
+        "penalties": []
     },
     {
-        "driver_name": "Anuel_doble_Z_93",
-        "category": "Formula1",
-        "penalties": [
-
-        ]
+        "driver_name": "[FA]PASIIONCR7",
+        "category": "DIV1",
+        "penalties": []
     },
     {
-        "driver_name": "JAndujar81",
-        "category": "Formula1",
-        "penalties": [
-
-        ]
+        "driver_name": "[FA] kkevin30",
+        "category": "DIV1",
+        "penalties": []
     },
     {
-        "driver_name": "OnFire_Malano6",
-        "category": "Formula1",
-        "penalties": [
-
-        ]
+        "driver_name": "Radiancy",
+        "category": "DIV1",
+        "penalties": []
     },
     {
-        "driver_name": "Fakeemotth",
-        "category": "Formula1",
-        "penalties": [
-
-        ]
+        "driver_name": "[FA] Fran_23_2000",
+        "category": "DIV1",
+        "penalties": []
     },
     {
-        "driver_name": "IRTmiguelon1998",
-        "category": "Formula1",
-        "penalties": [
-
-        ]
+        "driver_name": "sancla22",
+        "category": "DIV1",
+        "penalties": []
     },
     {
-        "driver_name": "Serbalesa12",
-        "category": "Formula1",
-        "penalties": [
-
-        ]
+        "driver_name": "Dsegu23",
+        "category": "DIV2",
+        "penalties": []
     },
     {
-        "driver_name": "PRL_Jav1LTON",
-        "category": "Formula1",
-        "penalties": [
-
-        ]
+        "driver_name": "FK42O",
+        "category": "DIV2",
+        "penalties": []
     },
     {
-        "driver_name": "Jesusgranado9",
-        "category": "Formula1",
-        "penalties": [
-
-        ]
+        "driver_name": "[HET] Prichid",
+        "category": "DIV1",
+        "penalties": []
     },
     {
-        "driver_name": "Sergio_PRO",
-        "category": "Formula1",
-        "penalties": [
-
-        ]
+        "driver_name": "Adrikristal",
+        "category": "DIV1",
+        "penalties": []
     },
     {
-        "driver_name": "samuelzarallo7",
-        "category": "Formula2",
-        "penalties": [
-
-        ]
+        "driver_name": "[VRG] JDAV_2003",
+        "category": "DIV2",
+        "penalties": []
     },
     {
-        "driver_name": "Alexshaark11",
-        "category": "Formula2",
-        "penalties": [
-
-        ]
+        "driver_name": "Eric",
+        "category": "DIV2",
+        "penalties": []
     },
     {
-        "driver_name": "sergiogamir",
-        "category": "Formula2",
-        "penalties": [
-
-        ]
+        "driver_name": "TTV ManuTamai_",
+        "category": "DIV1",
+        "penalties": []
     },
     {
-        "driver_name": "GofitoPWR",
-        "category": "Formula2",
-        "penalties": [
- 
-        ]
+        "driver_name": "jamaica_topee",
+        "category": "DIV1",
+        "penalties": []
     },
     {
-        "driver_name": "entucara-777",
-        "category": "Formula2",
-        "penalties": [
-
-        ]
+        "driver_name": "𝗝𝘂𝗮𝗻𝗣𝗮𝗿𝟴𝟮",
+        "category": "DIV2",
+        "penalties": []
     },
     {
-        "driver_name": "Dylanrb8-.-",
-        "category": "Formula2",
-        "penalties": [
-
-        ]
+        "driver_name": "[𝑾𝑹𝑳] 𝒂𝒏𝒐𝒏𝒊𝑮𝑶𝑨𝑻",
+        "category": "DIV2",
+        "penalties": []
     },
     {
-        "driver_name": "xicken",
-        "category": "Formula2",
-        "penalties": [
-
-        ]
+        "driver_name": "[FA] xBorja/ Umbrella",
+        "category": "DIV1",
+        "penalties": []
     },
     {
-        "driver_name": "Silviutns",
-        "category": "Formula2",
-        "penalties": [
-
-        ]
+        "driver_name": "REY MALLA",
+        "category": "DIV1",
+        "penalties": []
     },
     {
-        "driver_name": "M88Angel",
-        "category": "Formula2",
-        "penalties": [
-
-        ]
+        "driver_name": "[FA] Veigui9",
+        "category": "DIV2",
+        "penalties": []
     },
     {
-        "driver_name": "Samuejea17",
-        "category": "Formula2",
-        "penalties": [
-
-        ]
+        "driver_name": "[FA] Fornos",
+        "category": "DIV1",
+        "penalties": []
     },
     {
-        "driver_name": "Jordhino82",
-        "category": "Formula2",
-        "penalties": [
-
-        ]
+        "driver_name": "[FA] Darkgamer1091",
+        "category": "DIV1",
+        "penalties": []
     },
     {
-        "driver_name": "montoriete_10",
-        "category": "Formula2",
-        "penalties": [
-
-        ]
+        "driver_name": "Dumar martinez",
+        "category": "DIV2",
+        "penalties": []
     },
     {
-        "driver_name": "m1nonicolas",
-        "category": "Formula2",
-        "penalties": [
-
-        ]
+        "driver_name": "Manu",
+        "category": "DIV2",
+        "penalties": []
     },
     {
-        "driver_name": "ManuEntre",
-        "category": "Formula2",
-        "penalties": [
-
-        ]
+        "driver_name": "Evil_Mar796io",
+        "category": "DIV2",
+        "penalties": []
     },
     {
-        "driver_name": "Pulgatauste99",
-        "category": "Formula2",
-        "penalties": [
-
-        ]
+        "driver_name": "Juanreyes262",
+        "category": "DIV2",
+        "penalties": []
     },
     {
-        "driver_name": "pacheking83",
-        "category": "Formula2",
-        "penalties": [
-
-        ]
+        "driver_name": "danireyes192002",
+        "category": "DIV2",
+        "penalties": []
     },
     {
-        "driver_name": "diablaso",
-        "category": "Formula2",
-        "penalties": [
-
-        ]
+        "driver_name": "[FA] Tatum",
+        "category": "DIV2",
+        "penalties": []
     },
     {
-        "driver_name": "MiniPerejon",
-        "category": "Formula2",
-        "penalties": [
-
-        ]
+        "driver_name": "Marcos Guerrero",
+        "category": "DIV2",
+        "penalties": []
     },
     {
-        "driver_name": "marcos_cbkp",
-        "category": "Formula2",
-        "penalties": [
-
-        ]
+        "driver_name": "Fernandoover",
+        "category": "DIV2",
+        "penalties": []
     },
     {
-        "driver_name": "Gonic-002",
-        "category": "Formula2",
-        "penalties": [
-
-        ]
+        "driver_name": "ernesto3005",
+        "category": "DIV2",
+        "penalties": []
     },
     {
-        "driver_name": "sergi_seis_gm",
-        "category": "Formula2",
-        "penalties": [
-
-        ]
+        "driver_name": "victor4444fg",
+        "category": "DIV2",
+        "penalties": []
     },
     {
-        "driver_name": "Jhernandeez28",
-        "category": "Formula2",
-        "penalties": [
-
-        ]
+        "driver_name": "El Aspirante ✨ #33",
+        "category": "DIV2",
+        "penalties": []
     },
     {
-        "driver_name": "xabilaura",
-        "category": "Formula2",
-        "penalties": [
-        ]
+        "driver_name": "KimiAntonelli_12",
+        "category": "DIV2",
+        "penalties": []
     },
     {
-        "driver_name": "alboroto",
-        "category": "Formula2",
-        "penalties": [
-        ]
+        "driver_name": "DiCube28",
+        "category": "DIV2",
+        "penalties": []
+    },
+    {
+        "driver_name": "Dani",
+        "category": "DIV2",
+        "penalties": []
+    },
+    {
+        "driver_name": "Mahikys",
+        "category": "DIV2",
+        "penalties": []
+    },
+    {
+        "driver_name": "[WRL] Martin44",
+        "category": "DIV2",
+        "penalties": []
+    },
+    {
+        "driver_name": "aleix💦",
+        "category": "DIV2",
+        "penalties": []
     }
 ]

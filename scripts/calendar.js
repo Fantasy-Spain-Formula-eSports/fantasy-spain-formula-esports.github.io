@@ -14,7 +14,10 @@ return response.json();
             race_info.push(element)
         }
     });
-
+    // Ordenar por fecha
+    const ordenados = race_info.sort((a, b) => {
+    return parseFecha(a.fecha) - parseFecha(b.fecha);
+    });
     WriteCards(race_info)
 }
 )
@@ -22,6 +25,12 @@ return response.json();
 console.error('Error:', error);
 }); 
 
+// Función para parsear fechas incluso si hay errores de formato
+function parseFecha(fecha) {
+  // Elimina milisegundos o segundos adicionales si es necesario
+  const fechaCorta = fecha.slice(0, 19).replace(/(\d{2}:\d{2}):\d{2}/, "$1");
+  return new Date(fechaCorta);
+}
 
 function WriteCards(race_info) {
     console.table(race_info)

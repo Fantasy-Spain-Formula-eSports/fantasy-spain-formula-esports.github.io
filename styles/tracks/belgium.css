@@ -1,27 +1,27 @@
-.card#belgium{
+.card#spa{
     background-image: url("../../attachments/tracks/spa.png");
     z-index: 0;
 }
-.cardBox#belgium::before{
+.cardBox#spa::before{
     background: -webkit-linear-gradient(to right, red, yellow, black);
     background: linear-gradient(to right,red,yellow,black);
 }
-.skill-per.rectas.belgium {
+.skill-per.rectas.spa {
     /*progreso de las diferentes lenguajes*/
     width: 55%;
   }
   
-  .skill-per.lentas.belgium {
+  .skill-per.lentas.spa {
     /*progreso de las diferentes lenguajes*/
     width: 17%;
   }
   
-  .skill-per.medias.belgium {
+  .skill-per.medias.spa {
     /*progreso de las diferentes lenguajes*/
     width: 39%;
   }
   
-  .skill-per.rapidas.belgium {
+  .skill-per.rapidas.spa {
     /*progreso de las diferentes lenguajes*/
     width: 44%;
   }

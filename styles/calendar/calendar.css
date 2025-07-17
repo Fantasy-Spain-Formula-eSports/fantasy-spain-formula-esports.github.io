@@ -31,14 +31,14 @@
     background-image: url(../../attachments/country/spain.png);
 }
 .card#barein{
-    background-image: url(../../attachments/country/bahrain.png);
+    background-image: url(../../attachments/country/barein.png);
 }
 .card#brasil{
     background-image: url(../../attachments/country/brasil.png);
     background-position: center;
 }
 .card#spa{
-  background-image: url(../../attachments/country/belgium.png);
+  background-image: url(../../attachments/country/spa.png);
   background-position: center;
   background-size: contain;
 }

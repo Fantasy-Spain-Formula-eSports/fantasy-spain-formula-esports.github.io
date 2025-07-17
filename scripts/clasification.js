@@ -146,22 +146,23 @@ function show_data_driver(json,category) {
     
     document.getElementById(category+"-drivers-table").innerHTML = ""
     for (let index = 0; index < json.length; index++) {
+        document.getElementById(category + "-drivers-table").innerHTML += '<tr>' +
+        '<td style="background-color:red;min-width:10rem;max-width:10rem;">' + json[index]["piloto"] + '</td>' +
+        '<td style="background-color: red;">' + json[index]["puntuacionTotal"] + '</td>' +
+        '<td>' + (json[index]["puntuaciones"][0] ?? 0) + '</td>' +
+        '<td>' + (json[index]["puntuaciones"][1] ?? 0) + '</td>' +
+        '<td>' + (json[index]["puntuaciones"][2] ?? 0) + '</td>' +
+        '<td>' + (json[index]["puntuaciones"][3] ?? 0) + '</td>' +
+        '<td>' + (json[index]["puntuaciones"][4] ?? 0) + '</td>' +
+        '<td>' + (json[index]["puntuaciones"][5] ?? 0) + '</td>' +
+        '<td>' + (json[index]["puntuaciones"][6] ?? 0) + '</td>' +
+        '<td>' + (json[index]["puntuaciones"][7] ?? 0) + '</td>' +
+        '<td>' + (json[index]["puntuaciones"][8] ?? 0) + '</td>' +
+        '<td>' + (json[index]["puntuaciones"][9] ?? 0) + '</td>' +
+        '<td>' + (json[index]["puntuaciones"][10] ?? 0) + '</td>' +
+        '<td>' + (json[index]["puntuaciones"][11] ?? 0) + '</td>' +
+        '</tr>';
 
-        document.getElementById(category+"-drivers-table").innerHTML += '<tr>'+
-        '<td style="background-color:red;min-width:10rem;max-width:10rem;">'+json[index]["piloto"]+'</td>' +
-        '<td style="background-color: red;">'+json[index]["puntuacionTotal"]+'</td>'+
-        '<td>'+json[index]["puntuaciones"][0]+'</td>'+
-        '<td>'+json[index]["puntuaciones"][1]+'</td>'+
-        '<td>'+json[index]["puntuaciones"][2]+'</td>'+
-        '<td>'+json[index]["puntuaciones"][3]+'</td>'+
-        '<td>'+json[index]["puntuaciones"][4]+'</td>'+
-        '<td>'+json[index]["puntuaciones"][5]+'</td>'+
-        '<td>'+json[index]["puntuaciones"][6]+'</td>'+
-        '<td>'+json[index]["puntuaciones"][7]+'</td>'+
-        '<td>'+json[index]["puntuaciones"][8]+'</td>'+
-        '<td>'+json[index]["puntuaciones"][9]+'</td>'+
-'<td>'+json[index]["puntuaciones"][10]+'</td>'+
-      '</tr>'
     }    
 }
 
@@ -172,17 +173,18 @@ function show_data_team(json,category) {
         document.getElementById(category+"-teams-table").innerHTML += '<tr>'+
         '<td style="background-color:'+color_team+';min-width:10rem;max-width:10rem;">'+json[index]["equipo"]+'</td>' +
         '<td style="background-color: red;">'+json[index]["puntuacionTotal"]+'</td>'+
-        '<td>'+json[index]["puntuaciones"][0]+'</td>'+
-        '<td>'+json[index]["puntuaciones"][1]+'</td>'+
-        '<td>'+json[index]["puntuaciones"][2]+'</td>'+
-        '<td>'+json[index]["puntuaciones"][3]+'</td>'+
-        '<td>'+json[index]["puntuaciones"][4]+'</td>'+
-        '<td>'+json[index]["puntuaciones"][5]+'</td>'+
-        '<td>'+json[index]["puntuaciones"][6]+'</td>'+
-        '<td>'+json[index]["puntuaciones"][7]+'</td>'+
-        '<td>'+json[index]["puntuaciones"][8]+'</td>'+
-        '<td>'+json[index]["puntuaciones"][9]+'</td>'+
-'<td>'+json[index]["puntuaciones"][10]+'</td>'+
+        '<td>' + (json[index]["puntuaciones"][0] ?? 0) + '</td>' +
+        '<td>' + (json[index]["puntuaciones"][1] ?? 0) + '</td>' +
+        '<td>' + (json[index]["puntuaciones"][2] ?? 0) + '</td>' +
+        '<td>' + (json[index]["puntuaciones"][3] ?? 0) + '</td>' +
+        '<td>' + (json[index]["puntuaciones"][4] ?? 0) + '</td>' +
+        '<td>' + (json[index]["puntuaciones"][5] ?? 0) + '</td>' +
+        '<td>' + (json[index]["puntuaciones"][6] ?? 0) + '</td>' +
+        '<td>' + (json[index]["puntuaciones"][7] ?? 0) + '</td>' +
+        '<td>' + (json[index]["puntuaciones"][8] ?? 0) + '</td>' +
+        '<td>' + (json[index]["puntuaciones"][9] ?? 0) + '</td>' +
+        '<td>' + (json[index]["puntuaciones"][10] ?? 0) + '</td>' +
+        '<td>' + (json[index]["puntuaciones"][11] ?? 0) + '</td>' +
       '</tr>'
     }   
 }
