@@ -1,147 +1,157 @@
 [
     {
         "driver_name": "Alex Limorte",
-        "score": [],
+        "score": [0],
         "team": "Red Bull"
     },
     {
         "driver_name": "Dsegu23",
-        "score": [],
+        "score": [9],
         "team": "Red Bull"
     },
     {
         "driver_name": "ESPL_Kratos",
-        "score": [],
+        "score": [0],
+        "team": "Red Bull"
+    },
+        {
+        "driver_name": "Nico",
+        "score": [0],
         "team": "Red Bull"
     },
     {
-        "driver_name": "Sergio Piñero",
-        "score": [],
+        "driver_name": "DRT_Piñero_33",
+        "score": [12],
         "team": "McLaren"
     },
     {
         "driver_name": "[VRG] JDAV_2003",
-        "score": [],
+        "score": [8],
         "team": "McLaren"
     },
     {
         "driver_name": "Evil_Mar796io",
-        "score": [],
+        "score": [18],
         "team": "Ferrari"
     },
     {
-        "driver_name": "FK42O",
-        "score": [],
+        "driver_name": "FUMA KENKE420",
+        "score": [10],
         "team": "Ferrari"
     },
     {
         "driver_name": "ESPL KIKE",
-        "score": [],
+        "score": [0],
         "team": "Ferrari"
     },
     {
         "driver_name": "Juanreyes262",
-        "score": [],
+        "score": [0],
         "team": "Mercedes"
     },
     {
-        "driver_name": "danireyes192002",
-        "score": [],
+        "driver_name": "danielreyes19-02",
+        "score": [0],
         "team": "Mercedes"
     },
     {
         "driver_name": "Radiancy",
-        "score": [],
+        "score": [2],
         "team": "Mercedes"
     },
     {
         "driver_name": "[FA] Veigui9",
-        "score": [],
+        "score": [0],
         "team": "Aston Martin"
     },
     {
-        "driver_name": "[FA] Tatum",
-        "score": [],
+        "driver_name": "srtatum",
+        "score": [5],
         "team": "Aston Martin"
     },
     {
         "driver_name": "Marcos Guerrero",
-        "score": [],
+        "score": [25],
         "team": "Aston Martin"
     },
     {
         "driver_name": "Fernandoover",
-        "score": [],
+        "score": [6],
         "team": "RB Visa Cash"
     },
     {
         "driver_name": "ernesto3005",
-        "score": [],
+        "score": [0],
         "team": "RB Visa Cash"
     },
     {
         "driver_name": "victor4444fg",
-        "score": [],
+        "score": [0],
         "team": "RB Visa Cash"
     },
     {
-        "driver_name": "El Aspirante ✨ #33",
-        "score": [],
+        "driver_name": "xxCarlos33",
+        "score": [20],
         "team": "Alpine"
     },
     {
         "driver_name": "KimiAntonelli_12",
-        "score": [],
+        "score": [3],
         "team": "Alpine"
     },
     {
         "driver_name": "DiCube28",
-        "score": [],
+        "score": [0],
         "team": "Alpine"
     },
     {
         "driver_name": "JuanPar82",
-        "score": [],
+        "score": [0],
         "team": "Haas"
     },
     {
         "driver_name": "[WRL] anoniGOAT",
-        "score": [],
+        "score": [1],
         "team": "Haas"
     },
     {
         "driver_name": "Dani",
-        "score": [],
+        "score": [0],
         "team": "Haas"
     },
     {
-        "driver_name": "Eric",
-        "score": [],
+        "driver_name": "Diego Palancar",
+        "score": [0],
+        "team": "Haas"
+    },
+    {
+        "driver_name": "ericblanc",
+        "score": [7],
         "team": "Williams"
     },
     {
         "driver_name": "Mahikys",
-        "score": [],
+        "score": [15],
         "team": "Williams"
     },
     {
         "driver_name": "[WRL] Martin44",
-        "score": [],
+        "score": [0],
         "team": "Williams"
     },
     {
-        "driver_name": "Manu",
-        "score": [],
+        "driver_name": "M.J.Manu067",
+        "score": [4],
         "team": "Kick Sauber"
     },
     {
         "driver_name": "Dumar martinez",
-        "score": [],
+        "score": [0],
         "team": "Kick Sauber"
     },
     {
-        "driver_name": "aleix💦",
-        "score": [],
+        "driver_name": "Aleix526_YT",
+        "score": [0],
         "team": "Kick Sauber"
     }
 ]
